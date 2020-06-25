@@ -1,0 +1,19 @@
+{
+  "name": "Exel",
+  "port": 3399,
+  "httpsPort": 6000,
+  "path": "",
+  "version": "v2.1.48",
+  "connectionPool": {
+    "connectionLimit": 5000,
+    "host": "localhost",
+    "user": "root",
+    "password": "",
+    "database": "exel_upload"
+  },
+  "privatekey": "",
+  "gkey": "",
+  "expiresIn": "2h",
+  "host_link": "http://localhost:5400/#"
+  
+}

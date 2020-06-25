@@ -1,0 +1,19 @@
+{
+  "name": "MPM Development - dafault",
+  "port": 3000,
+  "httpsPort": 4000,
+  "version": "v2.1.48",
+  "connectionPool": {
+    "connectionLimit": 5000,
+    "host": "localhost",
+    "user": "root",
+    "password": "",
+    "database": "test"
+  },
+  "secret": "",
+  "privatekey": "MPM-ksjgikujjhgfikujkjefujhgKJHFIKUJHDFUIWGIFVEWGB-MPM",
+  "authkey": "",
+  "email": "",
+  "email_password": "",
+  "email_logo": ""
+}
