@@ -3022,7 +3022,7 @@ var UrlConstants = /** @class */ (function () {
     function UrlConstants() {
     }
     UrlConstants.modal_name = "NovoNordiskIN";
-    UrlConstants.MAINURL = 'http://localhost:3399/';
+    UrlConstants.MAINURL = 'http://54.179.156.122:3399/';
     // static usersGetTableItems = 'ex/register/submit';
     UrlConstants.saveUser = 'portal/users/addupdateuser';
     UrlConstants.updateUser = 'portal/users/updateportal';
