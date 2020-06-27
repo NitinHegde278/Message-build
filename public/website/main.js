@@ -178,7 +178,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div mat-dialog-content id=\"sending\">\r\n        <div class=\"h2\">Deleted Successfully</div>\r\n        <button class=\"btn btn-success\" (click)=\"dialogRef.close()\">OK</button>\r\n</div>\r\n<!-- <h1 mat-dialog-title>Delete Request</h1>\r\n<div mat-dialog-content>\r\n    <div class=\"row container\">\r\n        <div class=\"col-md-12\">\r\n            <p>Are you sure you want to Delete ?\r\n        </div>\r\n    </div>\r\n    <div class=\"row default-btn1\">\r\n        <div class=\"col-md-12 default-btn1\">\r\n            <button type=\"button\" class=\"btn btn-default bg-success pull-right m-3 default-btn1\"\r\n                (click)=\"confirm()\">Confirm</button>\r\n            <button type=\"button\" class=\"btn btn-default bg-danger pull-right m-3  default-btn1\" (click)=\"dialogRef.close()\">Cancel</button>\r\n        </div>\r\n    </div>\r\n</div> -->");
+/* harmony default export */ __webpack_exports__["default"] = ("<!-- <div mat-dialog-content id=\"sending\">\r\n        <div class=\"h3\">Deleted Successfully</div>\r\n        <button class=\"btn btn-success\" (click)=\"dialogRef.close()\">OK</button>\r\n</div> -->\r\n<!-- <h1 mat-dialog-title>Delete Request</h1>\r\n<div mat-dialog-content>\r\n    <div class=\"row container\">\r\n        <div class=\"col-md-12\">\r\n            <p>Are you sure you want to Delete ?\r\n        </div>\r\n    </div>\r\n    <div class=\"row default-btn1\">\r\n        <div class=\"col-md-12 default-btn1\">\r\n            <button type=\"button\" class=\"btn btn-default bg-success pull-right m-3 default-btn1\"\r\n                (click)=\"confirm()\">Confirm</button>\r\n            <button type=\"button\" class=\"btn btn-default bg-danger pull-right m-3  default-btn1\" (click)=\"dialogRef.close()\">Cancel</button>\r\n        </div>\r\n    </div>\r\n</div> -->\r\n<h1 mat-dialog-title style=\"text-align:center;\">Delete Request</h1>\r\n<div mat-dialog-content>\r\n    \r\n    <div class=\"row\">\r\n        <div class=\"col-md-12\">\r\n           <p style=\"text-align:center;\">Are you sure you want to Delete ? </p>\r\n       </div>\r\n    </div>\r\n    <div class=\"row\">\r\n\r\n        <div class=\"col-md-12\">\r\n            <button type=\"button\" class=\"btn btn-default bg-success pull-right m-3\" (click)=\"deleteForward()\">Confirm</button>       \r\n            <button type=\"button\" class=\"btn btn-default bg-danger pull-right m-3\" mat-dialog-close>Cancel</button>   \r\n        </div>\r\n    </div>\r\n</div>");
 
 /***/ }),
 
@@ -217,7 +217,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\r\n<div mat-dialog-content id=\"sending\">\r\n    <div *ngIf=\"sending\">\r\n        <div class=\"h2\">Message Has Been Sent Successfully</div>\r\n        <button class=\"btn btn-success\" (click)=\"dialogRef.close()\">OK</button>\r\n    </div>\r\n    <div *ngIf=\"!sending\">\r\n  <div class=\"h2\">Sending Messages</div>\r\n  <div class=\"h3\">Please wait....</div>\r\n  </div>\r\n  \r\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("\r\n<div mat-dialog-content id=\"sending\">\r\n    <div *ngIf=\"sending\">\r\n        <div class=\"h3\">Message Has Been Sent Successfully</div>\r\n        <button class=\"btn btn-success\" (click)=\"dialogRef.close()\">OK</button>\r\n    </div>\r\n    <div *ngIf=\"!sending\">\r\n  <div class=\"h3\">Sending Messages</div>\r\n  <div class=\"h4\">Please wait....</div>\r\n  </div>\r\n  \r\n</div>");
 
 /***/ }),
 
@@ -373,7 +373,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\r\n<div mat-dialog-content id=\"sending\">\r\n    <div *ngIf=\"sending\">\r\n        <div class=\"h2\">Message Has Been Sent Successfully</div>\r\n        <button class=\"btn btn-success\" (click)=\"dialogRef.close()\">OK</button>\r\n    </div>\r\n    <div *ngIf=\"!sending\">\r\n  <div class=\"h2\">Sending Messages</div>\r\n  <div class=\"h3\">Please wait....</div>\r\n  </div>\r\n  \r\n</div>\r\n<!-- <div mat-dialog-actions>\r\n  <button mat-button (click)=\"onNoClick()\">No Thanks</button>\r\n  <button mat-button [mat-dialog-close]=\"data.animal\" cdkFocusInitial>Ok</button>\r\n</div> -->");
+/* harmony default export */ __webpack_exports__["default"] = ("\r\n<div mat-dialog-content id=\"sending\">\r\n    <div *ngIf=\"sending\">\r\n        <div class=\"h3\">Message Has Been Sent Successfully</div>\r\n        <button class=\"btn btn-success\" (click)=\"dialogRef.close()\">OK</button>\r\n    </div>\r\n    <div *ngIf=\"!sending\">\r\n  <div class=\"h3\">Sending Messages</div>\r\n  <div class=\"h4\">Please wait....</div>\r\n  </div>\r\n  \r\n</div>\r\n<!-- <div mat-dialog-actions>\r\n  <button mat-button (click)=\"onNoClick()\">No Thanks</button>\r\n  <button mat-button [mat-dialog-close]=\"data.animal\" cdkFocusInitial>Ok</button>\r\n</div> -->");
 
 /***/ }),
 
@@ -425,7 +425,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div mat-dialog-content id=\"sending\">\r\n    <div *ngIf=\"sending\">\r\n        <div class=\"h2\">Uploaded Successfully</div>\r\n        <button class=\"btn btn-success\" (click)=\"dialogRef.close()\">OK</button>\r\n    </div>\r\n    <div *ngIf=\"!sending\">\r\n  <div class=\"h2\">Uploading File</div>\r\n  <div class=\"h3\">Please wait....</div>\r\n  </div>\r\n  \r\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div mat-dialog-content id=\"sending\">\r\n    <div *ngIf=\"sending\">\r\n        <div class=\"h3\">Uploaded Successfully</div>\r\n        <button class=\"btn btn-success\" (click)=\"dialogRef.close()\">OK</button>\r\n    </div>\r\n    <div *ngIf=\"!sending\">\r\n  <div class=\"h3\">Uploading File</div>\r\n  <div class=\"h4\">Please wait....</div>\r\n  </div>\r\n  \r\n</div>");
 
 /***/ }),
 
@@ -2474,7 +2474,7 @@ var ForgotPasswordComponent = /** @class */ (function () {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (".forward{\r\n    margin: 50px 40px !important;\r\n}\r\n.open{\r\n    border-radius: 2.5rem !important;\r\n    background-color: #1d8b4e !important;\r\n    border: 2px solid #1d8b4e !important;\r\n    padding: 8px 20px;\r\n}\r\n.open:hover{\r\n    background-color: white !important;\r\n    color: #1d8b4e !important;\r\n    /* border: 2px solid #1d8b4e !important; */\r\n}\r\nth,td{\r\n    font-family: 'Montserrat', sans-serif;\r\n}\r\n#forward .gap p{\r\n    padding-right: 5px;\r\n}\r\n#sending{\r\n    height: 300px;\r\n    width: 400px;\r\n    text-align: center;\r\n  }\r\n#sending .h2{\r\n    padding: 30px;\r\n  }\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZm9yd2FyZC1tZXNzYWdlL2ZvcndhcmQtbWVzc2FnZS5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksNEJBQTRCO0FBQ2hDO0FBQ0E7SUFDSSxnQ0FBZ0M7SUFDaEMsb0NBQW9DO0lBQ3BDLG9DQUFvQztJQUNwQyxpQkFBaUI7QUFDckI7QUFDQTtJQUNJLGtDQUFrQztJQUNsQyx5QkFBeUI7SUFDekIsMENBQTBDO0FBQzlDO0FBQ0E7SUFDSSxxQ0FBcUM7QUFDekM7QUFDQTtJQUNJLGtCQUFrQjtBQUN0QjtBQUVBO0lBQ0ksYUFBYTtJQUNiLFlBQVk7SUFDWixrQkFBa0I7RUFDcEI7QUFDQTtJQUNFLGFBQWE7RUFDZiIsImZpbGUiOiJzcmMvYXBwL2ZvcndhcmQtbWVzc2FnZS9mb3J3YXJkLW1lc3NhZ2UuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5mb3J3YXJke1xyXG4gICAgbWFyZ2luOiA1MHB4IDQwcHggIWltcG9ydGFudDtcclxufVxyXG4ub3BlbntcclxuICAgIGJvcmRlci1yYWRpdXM6IDIuNXJlbSAhaW1wb3J0YW50O1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzFkOGI0ZSAhaW1wb3J0YW50O1xyXG4gICAgYm9yZGVyOiAycHggc29saWQgIzFkOGI0ZSAhaW1wb3J0YW50O1xyXG4gICAgcGFkZGluZzogOHB4IDIwcHg7XHJcbn1cclxuLm9wZW46aG92ZXJ7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZSAhaW1wb3J0YW50O1xyXG4gICAgY29sb3I6ICMxZDhiNGUgIWltcG9ydGFudDtcclxuICAgIC8qIGJvcmRlcjogMnB4IHNvbGlkICMxZDhiNGUgIWltcG9ydGFudDsgKi9cclxufVxyXG50aCx0ZHtcclxuICAgIGZvbnQtZmFtaWx5OiAnTW9udHNlcnJhdCcsIHNhbnMtc2VyaWY7XHJcbn1cclxuI2ZvcndhcmQgLmdhcCBwe1xyXG4gICAgcGFkZGluZy1yaWdodDogNXB4O1xyXG59XHJcblxyXG4jc2VuZGluZ3tcclxuICAgIGhlaWdodDogMzAwcHg7XHJcbiAgICB3aWR0aDogNDAwcHg7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgfVxyXG4gICNzZW5kaW5nIC5oMntcclxuICAgIHBhZGRpbmc6IDMwcHg7XHJcbiAgfSJdfQ== */");
+/* harmony default export */ __webpack_exports__["default"] = (".forward{\r\n    margin: 50px 40px !important;\r\n}\r\n.open{\r\n    border-radius: 2.5rem !important;\r\n    background-color: #1d8b4e !important;\r\n    border: 2px solid #1d8b4e !important;\r\n    padding: 8px 20px;\r\n}\r\n.open:hover{\r\n    background-color: white !important;\r\n    color: #1d8b4e !important;\r\n    /* border: 2px solid #1d8b4e !important; */\r\n}\r\nth,td{\r\n    font-family: 'Montserrat', sans-serif;\r\n}\r\n#forward .gap p{\r\n    padding-right: 5px;\r\n}\r\n#sending{\r\n    height: 200px;\r\n    width: 300px;\r\n    text-align: center;\r\n  }\r\n#sending .h3{\r\n    padding: 20px;\r\n  }\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZm9yd2FyZC1tZXNzYWdlL2ZvcndhcmQtbWVzc2FnZS5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksNEJBQTRCO0FBQ2hDO0FBQ0E7SUFDSSxnQ0FBZ0M7SUFDaEMsb0NBQW9DO0lBQ3BDLG9DQUFvQztJQUNwQyxpQkFBaUI7QUFDckI7QUFDQTtJQUNJLGtDQUFrQztJQUNsQyx5QkFBeUI7SUFDekIsMENBQTBDO0FBQzlDO0FBQ0E7SUFDSSxxQ0FBcUM7QUFDekM7QUFDQTtJQUNJLGtCQUFrQjtBQUN0QjtBQUVBO0lBQ0ksYUFBYTtJQUNiLFlBQVk7SUFDWixrQkFBa0I7RUFDcEI7QUFDQTtJQUNFLGFBQWE7RUFDZiIsImZpbGUiOiJzcmMvYXBwL2ZvcndhcmQtbWVzc2FnZS9mb3J3YXJkLW1lc3NhZ2UuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5mb3J3YXJke1xyXG4gICAgbWFyZ2luOiA1MHB4IDQwcHggIWltcG9ydGFudDtcclxufVxyXG4ub3BlbntcclxuICAgIGJvcmRlci1yYWRpdXM6IDIuNXJlbSAhaW1wb3J0YW50O1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzFkOGI0ZSAhaW1wb3J0YW50O1xyXG4gICAgYm9yZGVyOiAycHggc29saWQgIzFkOGI0ZSAhaW1wb3J0YW50O1xyXG4gICAgcGFkZGluZzogOHB4IDIwcHg7XHJcbn1cclxuLm9wZW46aG92ZXJ7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZSAhaW1wb3J0YW50O1xyXG4gICAgY29sb3I6ICMxZDhiNGUgIWltcG9ydGFudDtcclxuICAgIC8qIGJvcmRlcjogMnB4IHNvbGlkICMxZDhiNGUgIWltcG9ydGFudDsgKi9cclxufVxyXG50aCx0ZHtcclxuICAgIGZvbnQtZmFtaWx5OiAnTW9udHNlcnJhdCcsIHNhbnMtc2VyaWY7XHJcbn1cclxuI2ZvcndhcmQgLmdhcCBwe1xyXG4gICAgcGFkZGluZy1yaWdodDogNXB4O1xyXG59XHJcblxyXG4jc2VuZGluZ3tcclxuICAgIGhlaWdodDogMjAwcHg7XHJcbiAgICB3aWR0aDogMzAwcHg7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgfVxyXG4gICNzZW5kaW5nIC5oM3tcclxuICAgIHBhZGRpbmc6IDIwcHg7XHJcbiAgfSJdfQ== */");
 
 /***/ }),
 
@@ -2538,6 +2538,8 @@ var TABLEDATA1 = [
 ];
 var temp = [];
 var sent = false;
+var deleteUser = false;
+var deleteAdmin = false;
 var ForwardMessageComponent = /** @class */ (function () {
     function ForwardMessageComponent(dialog, service) {
         this.dialog = dialog;
@@ -2629,10 +2631,14 @@ var ForwardDialog = /** @class */ (function () {
         this.admin = false;
         if (this.service.role_id == 1) {
             this.user = true;
+            deleteUser = true;
+            deleteAdmin = false;
             this.admin = false;
         }
         else if (this.service.role_id == 3) {
             this.user = false;
+            deleteUser = false;
+            deleteAdmin = true;
             this.admin = true;
         }
         if (this.service.role_id === undefined) {
@@ -2640,10 +2646,14 @@ var ForwardDialog = /** @class */ (function () {
             // console.log(this.service.role_id,"undefined this.service.role_id")
             if (this.service.role_id == 1) {
                 this.user = true;
+                deleteUser = true;
+                deleteAdmin = false;
                 this.admin = false;
             }
             else if (this.service.role_id == 3) {
                 this.user = false;
+                deleteUser = false;
+                deleteAdmin = true;
                 this.admin = true;
             }
         }
@@ -2674,16 +2684,19 @@ var ForwardDialog = /** @class */ (function () {
     };
     ForwardDialog.prototype.deleting = function () {
         var _this = this;
-        if (this.user) {
-            var rem = TABLEDATA.filter(function (obj) { return obj !== _this.temp; });
-            TABLEDATA = rem;
-        }
-        else if (this.admin) {
-            var rem = TABLEDATA1.filter(function (obj) { return obj !== _this.temp; });
-            TABLEDATA1 = rem;
-        }
+        // if(this.user){
+        //   let rem = TABLEDATA.filter(obj => obj !==this.temp );
+        //   TABLEDATA = rem;
+        // }else if(this.admin){
+        //   let rem = TABLEDATA1.filter(obj => obj !==this.temp );
+        //   TABLEDATA1 = rem;
+        // }
         var dialogDelete = this.dialog.open(ForwardDelete, {});
-        this.dialogRef.close();
+        dialogDelete.afterClosed().subscribe(function (data) {
+            if (data == undefined) {
+                _this.dialogRef.close();
+            }
+        });
     };
     ForwardDialog.ctorParameters = function () { return [
         { type: undefined, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [_angular_material_dialog__WEBPACK_IMPORTED_MODULE_4__["MAT_DIALOG_DATA"],] }] },
@@ -2731,14 +2744,31 @@ var ForwardSuccess = /** @class */ (function () {
 }());
 
 var ForwardDelete = /** @class */ (function () {
-    function ForwardDelete(dialog, dialogRef) {
+    function ForwardDelete(toasterService, dialog, dialogRef) {
+        this.toasterService = toasterService;
         this.dialog = dialog;
         this.dialogRef = dialogRef;
+        this.temp = temp;
     }
     ;
     ForwardDelete.prototype.ngOnInit = function () {
     };
+    ForwardDelete.prototype.deleteForward = function () {
+        var _this = this;
+        if (deleteUser) {
+            var rem = TABLEDATA.filter(function (obj) { return obj !== _this.temp; });
+            TABLEDATA = rem;
+        }
+        else if (deleteAdmin) {
+            var rem = TABLEDATA1.filter(function (obj) { return obj !== _this.temp; });
+            TABLEDATA1 = rem;
+        }
+        this.dialogRef.close();
+        this.toasterService.pop("success", "Request Deleted successfully");
+        return "success";
+    };
     ForwardDelete.ctorParameters = function () { return [
+        { type: angular2_toaster__WEBPACK_IMPORTED_MODULE_5__["ToasterService"], decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [angular2_toaster__WEBPACK_IMPORTED_MODULE_5__["ToasterService"],] }] },
         { type: _angular_material_dialog__WEBPACK_IMPORTED_MODULE_4__["MatDialog"] },
         { type: _angular_material_dialog__WEBPACK_IMPORTED_MODULE_4__["MatDialogRef"] }
     ]; };
@@ -2748,7 +2778,9 @@ var ForwardDelete = /** @class */ (function () {
             template: __importDefault(__webpack_require__(/*! raw-loader!./forward-delete.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/forward-message/forward-delete.html")).default,
             styles: [__importDefault(__webpack_require__(/*! ./forward-message.component.css */ "./src/app/forward-message/forward-message.component.css")).default]
         }),
-        __metadata("design:paramtypes", [_angular_material_dialog__WEBPACK_IMPORTED_MODULE_4__["MatDialog"], _angular_material_dialog__WEBPACK_IMPORTED_MODULE_4__["MatDialogRef"]])
+        __param(0, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"])(angular2_toaster__WEBPACK_IMPORTED_MODULE_5__["ToasterService"])),
+        __metadata("design:paramtypes", [angular2_toaster__WEBPACK_IMPORTED_MODULE_5__["ToasterService"],
+            _angular_material_dialog__WEBPACK_IMPORTED_MODULE_4__["MatDialog"], _angular_material_dialog__WEBPACK_IMPORTED_MODULE_4__["MatDialogRef"]])
     ], ForwardDelete);
     return ForwardDelete;
 }());
@@ -3022,7 +3054,7 @@ var UrlConstants = /** @class */ (function () {
     function UrlConstants() {
     }
     UrlConstants.modal_name = "NovoNordiskIN";
-    UrlConstants.MAINURL = 'http://54.179.156.122:3399/';
+    UrlConstants.MAINURL = 'http://localhost:3399/';
     // static usersGetTableItems = 'ex/register/submit';
     UrlConstants.saveUser = 'portal/users/addupdateuser';
     UrlConstants.updateUser = 'portal/users/updateportal';
@@ -4602,7 +4634,7 @@ var setService = /** @class */ (function () {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("#first{\r\n    margin-top: 60px;\r\n}\r\n\r\n  .mat-form-field-appearance-outline .mat-form-field-outline {\r\n    color: white;\r\n  }\r\n\r\n  mat-form-field .mat-form-field-flex{ \r\n      background-color: white; \r\n      border-radius: 0.5rem !important;\r\n    }\r\n\r\n  mat-form-field{\r\n        background: white;\r\n    }\r\n\r\n  .example{\r\n      max-width: 400px;\r\n      max-height: 40px;\r\n      margin:40px 30px;\r\n  }\r\n\r\n  .example-full-width{\r\n      margin: 30px;\r\n      max-width: 970px;\r\n      height: 40px;\r\n  }\r\n\r\n  .send{\r\n    background: #1d8b4e;\r\n    border-radius: 2.5rem !important;\r\n    padding: 13px;\r\n    border: 2px solid #1d8b4e;\r\n  }\r\n\r\n  .send:hover{\r\n    background: white;\r\n    color: #1d8b4e;\r\n    border-radius: 2.5rem !important;\r\n    padding: 13px;\r\n  }\r\n\r\n  .card{\r\n      margin: 5px 30px -20px 20px;\r\n      max-width: 970px;\r\n  }\r\n\r\n  #sending{\r\n    height: 300px;\r\n    width: 400px;\r\n    text-align: center;\r\n  }\r\n\r\n  #sending .h2{\r\n    padding: 30px;\r\n  }\r\n\r\n  \r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc2VuZC1tZXNzYWdlL3NlbmQtbWVzc2FnZS5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksZ0JBQWdCO0FBQ3BCOztFQUVFO0lBQ0UsWUFBWTtFQUNkOztFQUNBO01BQ0ksdUJBQXVCO01BQ3ZCLGdDQUFnQztJQUNsQzs7RUFDQTtRQUNJLGlCQUFpQjtJQUNyQjs7RUFDRjtNQUNJLGdCQUFnQjtNQUNoQixnQkFBZ0I7TUFDaEIsZ0JBQWdCO0VBQ3BCOztFQUNBO01BQ0ksWUFBWTtNQUNaLGdCQUFnQjtNQUNoQixZQUFZO0VBQ2hCOztFQUNBO0lBQ0UsbUJBQW1CO0lBQ25CLGdDQUFnQztJQUNoQyxhQUFhO0lBQ2IseUJBQXlCO0VBQzNCOztFQUNBO0lBQ0UsaUJBQWlCO0lBQ2pCLGNBQWM7SUFDZCxnQ0FBZ0M7SUFDaEMsYUFBYTtFQUNmOztFQUNBO01BQ0ksMkJBQTJCO01BQzNCLGdCQUFnQjtFQUNwQjs7RUFDQTtJQUNFLGFBQWE7SUFDYixZQUFZO0lBQ1osa0JBQWtCO0VBQ3BCOztFQUNBO0lBQ0UsYUFBYTtFQUNmIiwiZmlsZSI6InNyYy9hcHAvc2VuZC1tZXNzYWdlL3NlbmQtbWVzc2FnZS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiI2ZpcnN0e1xyXG4gICAgbWFyZ2luLXRvcDogNjBweDtcclxufVxyXG5cclxuICAubWF0LWZvcm0tZmllbGQtYXBwZWFyYW5jZS1vdXRsaW5lIC5tYXQtZm9ybS1maWVsZC1vdXRsaW5lIHtcclxuICAgIGNvbG9yOiB3aGl0ZTtcclxuICB9XHJcbiAgbWF0LWZvcm0tZmllbGQgLm1hdC1mb3JtLWZpZWxkLWZsZXh7IFxyXG4gICAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTsgXHJcbiAgICAgIGJvcmRlci1yYWRpdXM6IDAuNXJlbSAhaW1wb3J0YW50O1xyXG4gICAgfVxyXG4gICAgbWF0LWZvcm0tZmllbGR7XHJcbiAgICAgICAgYmFja2dyb3VuZDogd2hpdGU7XHJcbiAgICB9XHJcbiAgLmV4YW1wbGV7XHJcbiAgICAgIG1heC13aWR0aDogNDAwcHg7XHJcbiAgICAgIG1heC1oZWlnaHQ6IDQwcHg7XHJcbiAgICAgIG1hcmdpbjo0MHB4IDMwcHg7XHJcbiAgfVxyXG4gIC5leGFtcGxlLWZ1bGwtd2lkdGh7XHJcbiAgICAgIG1hcmdpbjogMzBweDtcclxuICAgICAgbWF4LXdpZHRoOiA5NzBweDtcclxuICAgICAgaGVpZ2h0OiA0MHB4O1xyXG4gIH1cclxuICAuc2VuZHtcclxuICAgIGJhY2tncm91bmQ6ICMxZDhiNGU7XHJcbiAgICBib3JkZXItcmFkaXVzOiAyLjVyZW0gIWltcG9ydGFudDtcclxuICAgIHBhZGRpbmc6IDEzcHg7XHJcbiAgICBib3JkZXI6IDJweCBzb2xpZCAjMWQ4YjRlO1xyXG4gIH1cclxuICAuc2VuZDpob3ZlcntcclxuICAgIGJhY2tncm91bmQ6IHdoaXRlO1xyXG4gICAgY29sb3I6ICMxZDhiNGU7XHJcbiAgICBib3JkZXItcmFkaXVzOiAyLjVyZW0gIWltcG9ydGFudDtcclxuICAgIHBhZGRpbmc6IDEzcHg7XHJcbiAgfVxyXG4gIC5jYXJke1xyXG4gICAgICBtYXJnaW46IDVweCAzMHB4IC0yMHB4IDIwcHg7XHJcbiAgICAgIG1heC13aWR0aDogOTcwcHg7XHJcbiAgfVxyXG4gICNzZW5kaW5ne1xyXG4gICAgaGVpZ2h0OiAzMDBweDtcclxuICAgIHdpZHRoOiA0MDBweDtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICB9XHJcbiAgI3NlbmRpbmcgLmgye1xyXG4gICAgcGFkZGluZzogMzBweDtcclxuICB9XHJcblxyXG4gICJdfQ== */");
+/* harmony default export */ __webpack_exports__["default"] = ("#first{\r\n    margin-top: 60px;\r\n}\r\n\r\n  .mat-form-field-appearance-outline .mat-form-field-outline {\r\n    color: white;\r\n}\r\n\r\n  /* focused color */\r\n\r\n  .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {\r\n    color: #1d8b4e;\r\n}\r\n\r\n  /* floating label color */\r\n\r\n  .mat-form-field-appearance-outline.mat-focused .mat-form-field-label { \r\n    color: #1d8b4e; \r\n}\r\n\r\n  .mat-form-field-appearance-legacy .mat-form-field-underline {\r\n  background-color: #1d8b4e;\r\n}\r\n\r\n  mat-form-field .mat-form-field-flex{ \r\n      background-color: white; \r\n      border-radius: 0.5rem !important;\r\n    }\r\n\r\n  mat-form-field{\r\n        background: white;\r\n    }\r\n\r\n  .example{\r\n      max-width: 400px;\r\n      max-height: 40px;\r\n      margin:40px 30px;\r\n  }\r\n\r\n  .example-full-width{\r\n      margin: 30px;\r\n      max-width: 970px;\r\n      height: 40px;\r\n  }\r\n\r\n  .send{\r\n    background: #1d8b4e;\r\n    border-radius: 2.5rem !important;\r\n    padding: 13px;\r\n    border: 2px solid #1d8b4e;\r\n  }\r\n\r\n  .send:hover{\r\n    background: white;\r\n    color: #1d8b4e;\r\n    border-radius: 2.5rem !important;\r\n    padding: 13px;\r\n  }\r\n\r\n  .card{\r\n      margin: 5px 30px -20px 20px;\r\n      max-width: 970px;\r\n  }\r\n\r\n  #sending{\r\n    height: 200px;\r\n    width: 300px;\r\n    text-align: center;\r\n  }\r\n\r\n  #sending .h3{\r\n    padding: 20px;\r\n  }\r\n\r\n  \r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc2VuZC1tZXNzYWdlL3NlbmQtbWVzc2FnZS5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksZ0JBQWdCO0FBQ3BCOztFQUVFO0lBQ0UsWUFBWTtBQUNoQjs7RUFFQSxrQkFBa0I7O0VBQ2xCO0lBQ0ksY0FBYztBQUNsQjs7RUFFQSx5QkFBeUI7O0VBQ3pCO0lBQ0ksY0FBYztBQUNsQjs7RUFDQTtFQUNFLHlCQUF5QjtBQUMzQjs7RUFDRTtNQUNJLHVCQUF1QjtNQUN2QixnQ0FBZ0M7SUFDbEM7O0VBQ0E7UUFDSSxpQkFBaUI7SUFDckI7O0VBQ0Y7TUFDSSxnQkFBZ0I7TUFDaEIsZ0JBQWdCO01BQ2hCLGdCQUFnQjtFQUNwQjs7RUFDQTtNQUNJLFlBQVk7TUFDWixnQkFBZ0I7TUFDaEIsWUFBWTtFQUNoQjs7RUFDQTtJQUNFLG1CQUFtQjtJQUNuQixnQ0FBZ0M7SUFDaEMsYUFBYTtJQUNiLHlCQUF5QjtFQUMzQjs7RUFDQTtJQUNFLGlCQUFpQjtJQUNqQixjQUFjO0lBQ2QsZ0NBQWdDO0lBQ2hDLGFBQWE7RUFDZjs7RUFDQTtNQUNJLDJCQUEyQjtNQUMzQixnQkFBZ0I7RUFDcEI7O0VBQ0E7SUFDRSxhQUFhO0lBQ2IsWUFBWTtJQUNaLGtCQUFrQjtFQUNwQjs7RUFDQTtJQUNFLGFBQWE7RUFDZiIsImZpbGUiOiJzcmMvYXBwL3NlbmQtbWVzc2FnZS9zZW5kLW1lc3NhZ2UuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIiNmaXJzdHtcclxuICAgIG1hcmdpbi10b3A6IDYwcHg7XHJcbn1cclxuXHJcbiAgLm1hdC1mb3JtLWZpZWxkLWFwcGVhcmFuY2Utb3V0bGluZSAubWF0LWZvcm0tZmllbGQtb3V0bGluZSB7XHJcbiAgICBjb2xvcjogd2hpdGU7XHJcbn1cclxuXHJcbi8qIGZvY3VzZWQgY29sb3IgKi9cclxuLm1hdC1mb3JtLWZpZWxkLWFwcGVhcmFuY2Utb3V0bGluZS5tYXQtZm9jdXNlZCAubWF0LWZvcm0tZmllbGQtb3V0bGluZS10aGljayB7XHJcbiAgICBjb2xvcjogIzFkOGI0ZTtcclxufVxyXG5cclxuLyogZmxvYXRpbmcgbGFiZWwgY29sb3IgKi9cclxuLm1hdC1mb3JtLWZpZWxkLWFwcGVhcmFuY2Utb3V0bGluZS5tYXQtZm9jdXNlZCAubWF0LWZvcm0tZmllbGQtbGFiZWwgeyBcclxuICAgIGNvbG9yOiAjMWQ4YjRlOyBcclxufVxyXG4ubWF0LWZvcm0tZmllbGQtYXBwZWFyYW5jZS1sZWdhY3kgLm1hdC1mb3JtLWZpZWxkLXVuZGVybGluZSB7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogIzFkOGI0ZTtcclxufVxyXG4gIG1hdC1mb3JtLWZpZWxkIC5tYXQtZm9ybS1maWVsZC1mbGV4eyBcclxuICAgICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7IFxyXG4gICAgICBib3JkZXItcmFkaXVzOiAwLjVyZW0gIWltcG9ydGFudDtcclxuICAgIH1cclxuICAgIG1hdC1mb3JtLWZpZWxke1xyXG4gICAgICAgIGJhY2tncm91bmQ6IHdoaXRlO1xyXG4gICAgfVxyXG4gIC5leGFtcGxle1xyXG4gICAgICBtYXgtd2lkdGg6IDQwMHB4O1xyXG4gICAgICBtYXgtaGVpZ2h0OiA0MHB4O1xyXG4gICAgICBtYXJnaW46NDBweCAzMHB4O1xyXG4gIH1cclxuICAuZXhhbXBsZS1mdWxsLXdpZHRoe1xyXG4gICAgICBtYXJnaW46IDMwcHg7XHJcbiAgICAgIG1heC13aWR0aDogOTcwcHg7XHJcbiAgICAgIGhlaWdodDogNDBweDtcclxuICB9XHJcbiAgLnNlbmR7XHJcbiAgICBiYWNrZ3JvdW5kOiAjMWQ4YjRlO1xyXG4gICAgYm9yZGVyLXJhZGl1czogMi41cmVtICFpbXBvcnRhbnQ7XHJcbiAgICBwYWRkaW5nOiAxM3B4O1xyXG4gICAgYm9yZGVyOiAycHggc29saWQgIzFkOGI0ZTtcclxuICB9XHJcbiAgLnNlbmQ6aG92ZXJ7XHJcbiAgICBiYWNrZ3JvdW5kOiB3aGl0ZTtcclxuICAgIGNvbG9yOiAjMWQ4YjRlO1xyXG4gICAgYm9yZGVyLXJhZGl1czogMi41cmVtICFpbXBvcnRhbnQ7XHJcbiAgICBwYWRkaW5nOiAxM3B4O1xyXG4gIH1cclxuICAuY2FyZHtcclxuICAgICAgbWFyZ2luOiA1cHggMzBweCAtMjBweCAyMHB4O1xyXG4gICAgICBtYXgtd2lkdGg6IDk3MHB4O1xyXG4gIH1cclxuICAjc2VuZGluZ3tcclxuICAgIGhlaWdodDogMjAwcHg7XHJcbiAgICB3aWR0aDogMzAwcHg7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgfVxyXG4gICNzZW5kaW5nIC5oM3tcclxuICAgIHBhZGRpbmc6IDIwcHg7XHJcbiAgfVxyXG5cclxuICAiXX0= */");
 
 /***/ }),
 
@@ -5211,7 +5243,7 @@ var StateService = /** @class */ (function () {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (".container #template .btn{\r\n    border-radius: 2.5rem !important;\r\n    padding: 10px 10px;\r\n    border: 2px solid #1d8b4e;\r\n    background-color: #1d8b4e;\r\n}\r\n\r\n.container #template .btn:hover{\r\n    background-color: white;\r\n    color: #1d8b4e;\r\n}\r\n\r\n.btn.upload{\r\n    border-radius: 2.5rem !important;\r\n    padding: 10px 20px;\r\n    font-size: 15px;\r\n    border: 2px solid #1d8b4e;\r\n    background-color: #1d8b4e;\r\n}\r\n\r\n.btn.upload:hover{\r\n    background-color: white;\r\n    color: #1d8b4e;\r\n}\r\n\r\n#sending{\r\n    height: 300px;\r\n    width: 400px;\r\n    text-align: center;\r\n  }\r\n\r\n#sending .h2{\r\n    padding: 30px;\r\n  }\r\n\r\n/* .custom-file{\r\n      background-color: white;\r\n      border: 2px solid #1d8b4e;\r\n  }\r\n  #customFile:hover{\r\n    cursor: pointer;\r\n} */\r\n\r\n.upload-btn-wrapper {\r\n    position: relative;\r\n    overflow: hidden;\r\n    display: inline-block;\r\n  }\r\n\r\n#choose {\r\n    border: 2px solid #1d8b4e;\r\n    color: #1d8b4e;\r\n    background-color: white;\r\n    padding: 8px 20px;\r\n    border-radius: 8px;\r\n    font-weight: bold;\r\n  }\r\n\r\n.upload-btn-wrapper input[type=file] {\r\n    font-size: 100px;\r\n    position: absolute;\r\n    left: 0;\r\n    top: 0;\r\n    opacity: 0;\r\n  }\r\n\r\n.upload-btn-wrapper input[type=file]::-webkit-file-upload-button { \r\n    cursor: pointer; \r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdXBsb2FkLWV4Y2VsL3VwbG9hZC1leGNlbC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksZ0NBQWdDO0lBQ2hDLGtCQUFrQjtJQUNsQix5QkFBeUI7SUFDekIseUJBQXlCO0FBQzdCOztBQUVBO0lBQ0ksdUJBQXVCO0lBQ3ZCLGNBQWM7QUFDbEI7O0FBRUE7SUFDSSxnQ0FBZ0M7SUFDaEMsa0JBQWtCO0lBQ2xCLGVBQWU7SUFDZix5QkFBeUI7SUFDekIseUJBQXlCO0FBQzdCOztBQUNBO0lBQ0ksdUJBQXVCO0lBQ3ZCLGNBQWM7QUFDbEI7O0FBRUE7SUFDSSxhQUFhO0lBQ2IsWUFBWTtJQUNaLGtCQUFrQjtFQUNwQjs7QUFDQTtJQUNFLGFBQWE7RUFDZjs7QUFFQTs7Ozs7O0dBTUM7O0FBRUg7SUFDSSxrQkFBa0I7SUFDbEIsZ0JBQWdCO0lBQ2hCLHFCQUFxQjtFQUN2Qjs7QUFFRjtJQUNJLHlCQUF5QjtJQUN6QixjQUFjO0lBQ2QsdUJBQXVCO0lBQ3ZCLGlCQUFpQjtJQUNqQixrQkFBa0I7SUFDbEIsaUJBQWlCO0VBQ25COztBQUVBO0lBQ0UsZ0JBQWdCO0lBQ2hCLGtCQUFrQjtJQUNsQixPQUFPO0lBQ1AsTUFBTTtJQUNOLFVBQVU7RUFDWjs7QUFDQTtJQUNFLGVBQWU7QUFDbkIiLCJmaWxlIjoic3JjL2FwcC91cGxvYWQtZXhjZWwvdXBsb2FkLWV4Y2VsLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuY29udGFpbmVyICN0ZW1wbGF0ZSAuYnRue1xyXG4gICAgYm9yZGVyLXJhZGl1czogMi41cmVtICFpbXBvcnRhbnQ7XHJcbiAgICBwYWRkaW5nOiAxMHB4IDEwcHg7XHJcbiAgICBib3JkZXI6IDJweCBzb2xpZCAjMWQ4YjRlO1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzFkOGI0ZTtcclxufVxyXG5cclxuLmNvbnRhaW5lciAjdGVtcGxhdGUgLmJ0bjpob3ZlcntcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xyXG4gICAgY29sb3I6ICMxZDhiNGU7XHJcbn1cclxuXHJcbi5idG4udXBsb2Fke1xyXG4gICAgYm9yZGVyLXJhZGl1czogMi41cmVtICFpbXBvcnRhbnQ7XHJcbiAgICBwYWRkaW5nOiAxMHB4IDIwcHg7XHJcbiAgICBmb250LXNpemU6IDE1cHg7XHJcbiAgICBib3JkZXI6IDJweCBzb2xpZCAjMWQ4YjRlO1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzFkOGI0ZTtcclxufVxyXG4uYnRuLnVwbG9hZDpob3ZlcntcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xyXG4gICAgY29sb3I6ICMxZDhiNGU7XHJcbn1cclxuXHJcbiNzZW5kaW5ne1xyXG4gICAgaGVpZ2h0OiAzMDBweDtcclxuICAgIHdpZHRoOiA0MDBweDtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICB9XHJcbiAgI3NlbmRpbmcgLmgye1xyXG4gICAgcGFkZGluZzogMzBweDtcclxuICB9XHJcblxyXG4gIC8qIC5jdXN0b20tZmlsZXtcclxuICAgICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XHJcbiAgICAgIGJvcmRlcjogMnB4IHNvbGlkICMxZDhiNGU7XHJcbiAgfVxyXG4gICNjdXN0b21GaWxlOmhvdmVye1xyXG4gICAgY3Vyc29yOiBwb2ludGVyO1xyXG59ICovXHJcblxyXG4udXBsb2FkLWJ0bi13cmFwcGVyIHtcclxuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICAgIG92ZXJmbG93OiBoaWRkZW47XHJcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XHJcbiAgfVxyXG4gIFxyXG4jY2hvb3NlIHtcclxuICAgIGJvcmRlcjogMnB4IHNvbGlkICMxZDhiNGU7XHJcbiAgICBjb2xvcjogIzFkOGI0ZTtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xyXG4gICAgcGFkZGluZzogOHB4IDIwcHg7XHJcbiAgICBib3JkZXItcmFkaXVzOiA4cHg7XHJcbiAgICBmb250LXdlaWdodDogYm9sZDtcclxuICB9XHJcbiAgXHJcbiAgLnVwbG9hZC1idG4td3JhcHBlciBpbnB1dFt0eXBlPWZpbGVdIHtcclxuICAgIGZvbnQtc2l6ZTogMTAwcHg7XHJcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICBsZWZ0OiAwO1xyXG4gICAgdG9wOiAwO1xyXG4gICAgb3BhY2l0eTogMDtcclxuICB9XHJcbiAgLnVwbG9hZC1idG4td3JhcHBlciBpbnB1dFt0eXBlPWZpbGVdOjotd2Via2l0LWZpbGUtdXBsb2FkLWJ1dHRvbiB7IFxyXG4gICAgY3Vyc29yOiBwb2ludGVyOyBcclxufSJdfQ== */");
+/* harmony default export */ __webpack_exports__["default"] = (".container #template .btn{\r\n    border-radius: 2.5rem !important;\r\n    padding: 10px 10px;\r\n    border: 2px solid #1d8b4e;\r\n    background-color: #1d8b4e;\r\n}\r\n\r\n.container #template .btn:hover{\r\n    background-color: white;\r\n    color: #1d8b4e;\r\n}\r\n\r\n.btn.upload{\r\n    border-radius: 2.5rem !important;\r\n    padding: 10px 20px;\r\n    font-size: 15px;\r\n    border: 2px solid #1d8b4e;\r\n    background-color: #1d8b4e;\r\n}\r\n\r\n.btn.upload:hover{\r\n    background-color: white;\r\n    color: #1d8b4e;\r\n}\r\n\r\n#sending{\r\n    height: 200px;\r\n    width: 300px;\r\n    text-align: center;\r\n  }\r\n\r\n#sending .h3{\r\n    padding: 20px;\r\n  }\r\n\r\n/* .custom-file{\r\n      background-color: white;\r\n      border: 2px solid #1d8b4e;\r\n  }\r\n  #customFile:hover{\r\n    cursor: pointer;\r\n} */\r\n\r\n.upload-btn-wrapper {\r\n    position: relative;\r\n    overflow: hidden;\r\n    display: inline-block;\r\n  }\r\n\r\n#choose {\r\n    border: 2px solid #1d8b4e;\r\n    color: #1d8b4e;\r\n    background-color: white;\r\n    padding: 8px 20px;\r\n    border-radius: 8px;\r\n    font-weight: bold;\r\n  }\r\n\r\n.upload-btn-wrapper input[type=file] {\r\n    font-size: 100px;\r\n    position: absolute;\r\n    left: 0;\r\n    top: 0;\r\n    opacity: 0;\r\n  }\r\n\r\n.upload-btn-wrapper input[type=file]::-webkit-file-upload-button { \r\n    cursor: pointer; \r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdXBsb2FkLWV4Y2VsL3VwbG9hZC1leGNlbC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksZ0NBQWdDO0lBQ2hDLGtCQUFrQjtJQUNsQix5QkFBeUI7SUFDekIseUJBQXlCO0FBQzdCOztBQUVBO0lBQ0ksdUJBQXVCO0lBQ3ZCLGNBQWM7QUFDbEI7O0FBRUE7SUFDSSxnQ0FBZ0M7SUFDaEMsa0JBQWtCO0lBQ2xCLGVBQWU7SUFDZix5QkFBeUI7SUFDekIseUJBQXlCO0FBQzdCOztBQUNBO0lBQ0ksdUJBQXVCO0lBQ3ZCLGNBQWM7QUFDbEI7O0FBRUE7SUFDSSxhQUFhO0lBQ2IsWUFBWTtJQUNaLGtCQUFrQjtFQUNwQjs7QUFDQTtJQUNFLGFBQWE7RUFDZjs7QUFFQTs7Ozs7O0dBTUM7O0FBRUg7SUFDSSxrQkFBa0I7SUFDbEIsZ0JBQWdCO0lBQ2hCLHFCQUFxQjtFQUN2Qjs7QUFFRjtJQUNJLHlCQUF5QjtJQUN6QixjQUFjO0lBQ2QsdUJBQXVCO0lBQ3ZCLGlCQUFpQjtJQUNqQixrQkFBa0I7SUFDbEIsaUJBQWlCO0VBQ25COztBQUVBO0lBQ0UsZ0JBQWdCO0lBQ2hCLGtCQUFrQjtJQUNsQixPQUFPO0lBQ1AsTUFBTTtJQUNOLFVBQVU7RUFDWjs7QUFDQTtJQUNFLGVBQWU7QUFDbkIiLCJmaWxlIjoic3JjL2FwcC91cGxvYWQtZXhjZWwvdXBsb2FkLWV4Y2VsLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuY29udGFpbmVyICN0ZW1wbGF0ZSAuYnRue1xyXG4gICAgYm9yZGVyLXJhZGl1czogMi41cmVtICFpbXBvcnRhbnQ7XHJcbiAgICBwYWRkaW5nOiAxMHB4IDEwcHg7XHJcbiAgICBib3JkZXI6IDJweCBzb2xpZCAjMWQ4YjRlO1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzFkOGI0ZTtcclxufVxyXG5cclxuLmNvbnRhaW5lciAjdGVtcGxhdGUgLmJ0bjpob3ZlcntcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xyXG4gICAgY29sb3I6ICMxZDhiNGU7XHJcbn1cclxuXHJcbi5idG4udXBsb2Fke1xyXG4gICAgYm9yZGVyLXJhZGl1czogMi41cmVtICFpbXBvcnRhbnQ7XHJcbiAgICBwYWRkaW5nOiAxMHB4IDIwcHg7XHJcbiAgICBmb250LXNpemU6IDE1cHg7XHJcbiAgICBib3JkZXI6IDJweCBzb2xpZCAjMWQ4YjRlO1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzFkOGI0ZTtcclxufVxyXG4uYnRuLnVwbG9hZDpob3ZlcntcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xyXG4gICAgY29sb3I6ICMxZDhiNGU7XHJcbn1cclxuXHJcbiNzZW5kaW5ne1xyXG4gICAgaGVpZ2h0OiAyMDBweDtcclxuICAgIHdpZHRoOiAzMDBweDtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICB9XHJcbiAgI3NlbmRpbmcgLmgze1xyXG4gICAgcGFkZGluZzogMjBweDtcclxuICB9XHJcblxyXG4gIC8qIC5jdXN0b20tZmlsZXtcclxuICAgICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XHJcbiAgICAgIGJvcmRlcjogMnB4IHNvbGlkICMxZDhiNGU7XHJcbiAgfVxyXG4gICNjdXN0b21GaWxlOmhvdmVye1xyXG4gICAgY3Vyc29yOiBwb2ludGVyO1xyXG59ICovXHJcblxyXG4udXBsb2FkLWJ0bi13cmFwcGVyIHtcclxuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICAgIG92ZXJmbG93OiBoaWRkZW47XHJcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XHJcbiAgfVxyXG4gIFxyXG4jY2hvb3NlIHtcclxuICAgIGJvcmRlcjogMnB4IHNvbGlkICMxZDhiNGU7XHJcbiAgICBjb2xvcjogIzFkOGI0ZTtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xyXG4gICAgcGFkZGluZzogOHB4IDIwcHg7XHJcbiAgICBib3JkZXItcmFkaXVzOiA4cHg7XHJcbiAgICBmb250LXdlaWdodDogYm9sZDtcclxuICB9XHJcbiAgXHJcbiAgLnVwbG9hZC1idG4td3JhcHBlciBpbnB1dFt0eXBlPWZpbGVdIHtcclxuICAgIGZvbnQtc2l6ZTogMTAwcHg7XHJcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICBsZWZ0OiAwO1xyXG4gICAgdG9wOiAwO1xyXG4gICAgb3BhY2l0eTogMDtcclxuICB9XHJcbiAgLnVwbG9hZC1idG4td3JhcHBlciBpbnB1dFt0eXBlPWZpbGVdOjotd2Via2l0LWZpbGUtdXBsb2FkLWJ1dHRvbiB7IFxyXG4gICAgY3Vyc29yOiBwb2ludGVyOyBcclxufSJdfQ== */");
 
 /***/ }),
 
