@@ -8,7 +8,7 @@
     "connectionLimit": 5000,
     "host": "localhost",
     "user": "root",
-    "password": "",
+    "password": "root123",
     "database": "excel_upload"
   },
   "privatekey": "",
