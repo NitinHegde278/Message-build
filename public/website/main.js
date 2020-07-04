@@ -204,7 +204,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container-fluid\">\n    <div class=\"row justify-content-center\">\n        <div class=\"col-md-10\">\n            <div class=\"card forward\">\n                <div class=\"card-header card-header-primary\">\n                    <div class=\"row\">\n                        <div class=\"col-lg-12 col-md-6 \">\n                            <div class=\"row\">\n                                <div class=\"col-md-6\">\n                                    <h4 class=\"card-title \">Forwarded Messages</h4>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n\n                <!--User-->\n                <table mat-table [dataSource]=\"dataSource\" class=\"shadow-lg\" *ngIf=\"user\">\n                    <!-- Name Column -->\n                    <ng-container matColumnDef=\"position\">\n                        <th mat-header-cell *matHeaderCellDef> No. </th>\n                        <td mat-cell *matCellDef=\"let element\"> {{element.position}} </td>\n                    </ng-container>\n\n                    <!-- Name Column -->\n                    <ng-container matColumnDef=\"campaign\">\n                        <th mat-header-cell *matHeaderCellDef> Campaign Name </th>\n                        <td mat-cell *matCellDef=\"let element\"> {{element.campaign}} </td>\n                    </ng-container>\n\n                    <!-- Email Column -->\n                    <ng-container matColumnDef=\"sentFrom\">\n                        <th mat-header-cell *matHeaderCellDef> Sent From </th>\n                        <td mat-cell *matCellDef=\"let element\"> {{element.sentFrom}} </td>\n                    </ng-container>\n\n                    <!-- Mobile number Column -->\n                    <ng-container matColumnDef=\"receivedDate\">\n                        <th mat-header-cell *matHeaderCellDef> Receieved Date </th>\n                        <td mat-cell *matCellDef=\"let element\"> {{element.receivedDate}} </td>\n                    </ng-container>\n\n                    <!-- Action Column -->\n                    <ng-container matColumnDef=\"action\">\n                        <th mat-header-cell *matHeaderCellDef>Action </th>\n                        <td mat-cell *matCellDef=\"let element\">\n                            <button class=\"btn btn-info open\" (click)=\"openForward(element)\">Open</button>\n                            <!-- <a (click)=\"edit_low(row) \" style=\"color:#1d8b4e; cursor:pointer;\">\n                                <mat-icon aria-label=\"Edit\">edit</mat-icon>\n                            </a>\n                            <a (click)=\"delete_low(row)\" style=\"color:red; cursor:pointer;\">\n                                <mat-icon aria-label=\"Delete\">delete</mat-icon>\n                            </a>\n                            <mat-slide-toggle [checked]=\"row.status\" class=\"toggle\"  [color]=\"color\" (change)=\"toggle(row,$event)\"></mat-slide-toggle> -->\n                            </td>\n                    </ng-container>\n\n                    <tr mat-header-row *matHeaderRowDef=\"displayedColumnsUser\"></tr>\n                    <tr mat-row *matRowDef=\"let row; columns: displayedColumnsUser;\"></tr>\n                </table>\n\n                    <!--Admin-->\n                    <table mat-table [dataSource]=\"dataSource\" class=\"shadow-lg\" *ngIf=\"admin\">\n                        <!-- Name Column -->\n                        <ng-container matColumnDef=\"position\">\n                            <th mat-header-cell *matHeaderCellDef> No. </th>\n                            <td mat-cell *matCellDef=\"let element\"> {{element.position}} </td>\n                        </ng-container>\n    \n                        <!-- Name Column -->\n                        <ng-container matColumnDef=\"campaign\">\n                            <th mat-header-cell *matHeaderCellDef> Campaign Name </th>\n                            <td mat-cell *matCellDef=\"let element\"> {{element.campaign}} </td>\n                        </ng-container>\n    \n                        <!-- Email Column -->\n                        <ng-container matColumnDef=\"sentFrom\">\n                            <th mat-header-cell *matHeaderCellDef> Sent From Org</th>\n                            <td mat-cell *matCellDef=\"let element\"> {{element.sentFrom}} </td>\n                        </ng-container>\n    \n                        <ng-container matColumnDef=\"sentTo\">\n                            <th mat-header-cell *matHeaderCellDef> Sent To Org </th>\n                            <td mat-cell *matCellDef=\"let element\"> {{element.sentTo}} </td>\n                        </ng-container>\n    \n                        <!-- Mobile number Column -->\n                        <ng-container matColumnDef=\"receivedDate\">\n                            <th mat-header-cell *matHeaderCellDef> Receieved Date </th>\n                            <td mat-cell *matCellDef=\"let element\"> {{element.receivedDate}} </td>\n                        </ng-container>\n    \n                        <!-- Action Column -->\n                        <ng-container matColumnDef=\"action\">\n                            <th mat-header-cell *matHeaderCellDef>Action </th>\n                            <td mat-cell *matCellDef=\"let element\">\n                                <button class=\"btn btn-info open\" (click)=\"openForward(element)\">Open</button>\n                                <!-- <a (click)=\"edit_low(row) \" style=\"color:#1d8b4e; cursor:pointer;\">\n                                    <mat-icon aria-label=\"Edit\">edit</mat-icon>\n                                </a>\n                                <a (click)=\"delete_low(row)\" style=\"color:red; cursor:pointer;\">\n                                    <mat-icon aria-label=\"Delete\">delete</mat-icon>\n                                </a>\n                                <mat-slide-toggle [checked]=\"row.status\" class=\"toggle\"  [color]=\"color\" (change)=\"toggle(row,$event)\"></mat-slide-toggle> -->\n                                </td>\n                        </ng-container>\n    \n                        <tr mat-header-row *matHeaderRowDef=\"displayedColumnsAdmin\"></tr>\n                        <tr mat-row *matRowDef=\"let row; columns: displayedColumnsAdmin;\"></tr>\n                    </table>\n                    <mat-paginator [length]=\"100\"\n                    [pageSize]=\"6\" [pageSizeOptions]=\"[6, 15, 25, 100]\" showFirstLastButtons></mat-paginator>\n                \n            </div>\n        </div>\n    </div>\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container-fluid\">\n    <div class=\"row justify-content-center\">\n        <div class=\"col-md-10\">\n            <div class=\"card forward\">\n                <div class=\"card-header card-header-primary\">\n                    <div class=\"row\">\n                        <div class=\"col-lg-12 col-md-6 \">\n                            <div class=\"row\">\n                                <div class=\"col-md-6\">\n                                    <h4 class=\"card-title \">Forwarded Messages</h4>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n\n                <!--User-->\n                <table mat-table [dataSource]=\"dataSource\" class=\"shadow-lg\" *ngIf=\"user\">\n                    <!-- Name Column -->\n                    <ng-container matColumnDef=\"position\">\n                        <th mat-header-cell *matHeaderCellDef> No. </th>\n                        <td mat-cell *matCellDef=\"let element\"> {{element.position}} </td>\n                    </ng-container>\n\n                    <!-- Name Column -->\n                    <ng-container matColumnDef=\"campaign\">\n                        <th mat-header-cell *matHeaderCellDef> Campaign Name </th>\n                        <td mat-cell *matCellDef=\"let element\"> {{element.campaign}} </td>\n                    </ng-container>\n\n                    <!-- Email Column -->\n                    <ng-container matColumnDef=\"sentFrom\">\n                        <th mat-header-cell *matHeaderCellDef> Sent From </th>\n                        <td mat-cell *matCellDef=\"let element\"> {{element.sentFrom}} </td>\n                    </ng-container>\n\n                    <!-- Mobile number Column -->\n                    <ng-container matColumnDef=\"receivedDate\">\n                        <th mat-header-cell *matHeaderCellDef> Receieved Date </th>\n                        <td mat-cell *matCellDef=\"let element\"> {{element.receivedDate}} </td>\n                    </ng-container>\n\n                    <!-- Action Column -->\n                    <ng-container matColumnDef=\"action\">\n                        <th mat-header-cell *matHeaderCellDef>Action </th>\n                        <td mat-cell *matCellDef=\"let element\">\n                            <button class=\"btn btn-info open\" (click)=\"openForward(element)\">Open</button>\n                            <!-- <a (click)=\"edit_low(row) \" style=\"color:#1d8b4e; cursor:pointer;\">\n                                <mat-icon aria-label=\"Edit\">edit</mat-icon>\n                            </a>\n                            <a (click)=\"delete_low(row)\" style=\"color:red; cursor:pointer;\">\n                                <mat-icon aria-label=\"Delete\">delete</mat-icon>\n                            </a>\n                            <mat-slide-toggle [checked]=\"row.status\" class=\"toggle\"  [color]=\"color\" (change)=\"toggle(row,$event)\"></mat-slide-toggle> -->\n                            </td>\n                    </ng-container>\n\n                    <tr mat-header-row *matHeaderRowDef=\"displayedColumnsUser\"></tr>\n                    <tr mat-row *matRowDef=\"let row; columns: displayedColumnsUser;\"></tr>\n                </table>\n\n                    <!--Admin-->\n                    <mat-table #table [dataSource]=\"dataSource\" class=\"shadow-lg\" *ngIf=\"admin\" [class.isMobile]=\"isMobile\">\n                        <!-- Name Column -->\n                        <ng-container matColumnDef=\"position\">\n                            <mat-header-cell *matHeaderCellDef> No. </mat-header-cell>\n                            <mat-cell *matCellDef=\"let element\"> {{element.position}} </mat-cell>\n                        </ng-container>\n    \n                        <!-- Name Column -->\n                        <ng-container matColumnDef=\"campaign\">\n                            <mat-header-cell mat-header-cell *matHeaderCellDef> Campaign Name </mat-header-cell>\n                            <mat-cell *matCellDef=\"let element\"> {{element.campaign}} </mat-cell>\n                        </ng-container>\n    \n                        <!-- Email Column -->\n                        <ng-container matColumnDef=\"sentFrom\">\n                            <mat-header-cell *matHeaderCellDef> Sent From Org</mat-header-cell>\n                            <mat-cell *matCellDef=\"let element\"> {{element.sentFrom}} </mat-cell>\n                        </ng-container>\n    \n                        <ng-container matColumnDef=\"sentTo\">\n                            <mat-header-cell *matHeaderCellDef> Sent To Org </mat-header-cell>\n                            <mat-cell *matCellDef=\"let element\"> {{element.sentTo}} </mat-cell>\n                        </ng-container>\n    \n                        <!-- Mobile number Column -->\n                        <ng-container matColumnDef=\"receivedDate\">\n                            <mat-header-cell *matHeaderCellDef> Receieved Date </mat-header-cell>\n                            <mat-cell *matCellDef=\"let element\"> {{element.receivedDate}} </mat-cell>\n                        </ng-container>\n    \n                        <!-- Action Column -->\n                        <ng-container matColumnDef=\"action\">\n                            <mat-header-cell *matHeaderCellDef>Action </mat-header-cell>\n                            <mat-cell *matCellDef=\"let element\">\n                                <button class=\"btn btn-info open\" (click)=\"openForward(element)\">Open</button>\n                                <!-- <a (click)=\"edit_low(row) \" style=\"color:#1d8b4e; cursor:pointer;\">\n                                    <mat-icon aria-label=\"Edit\">edit</mat-icon>\n                                </a>\n                                <a (click)=\"delete_low(row)\" style=\"color:red; cursor:pointer;\">\n                                    <mat-icon aria-label=\"Delete\">delete</mat-icon>\n                                </a>\n                                <mat-slide-toggle [checked]=\"row.status\" class=\"toggle\"  [color]=\"color\" (change)=\"toggle(row,$event)\"></mat-slide-toggle> -->\n                                </mat-cell>\n                        </ng-container>\n    \n                        <mat-header-row *matHeaderRowDef=\"displayedColumnsAdmin\"></mat-header-row>\n                        <mat-row *matRowDef=\"let row; columns: displayedColumnsAdmin;\"></mat-row>\n                    </mat-table>\n                    <mat-paginator [length]=\"100\"\n                    [pageSize]=\"6\" [pageSizeOptions]=\"[6, 15, 25, 100]\" showFirstLastButtons></mat-paginator>\n                \n            </div>\n        </div>\n    </div>\n</div>");
 
 /***/ }),
 
@@ -282,7 +282,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"col-lg-12\">\n<h1 mat-dialog-title>{{dialogTitle}}</h1>\n<div mat-dialog-content class=\"cardbox\">\n    <form [formGroup]=\"myForm\" (ngSubmit)=\"saveUser()\">\n            <div class=\"row container\">\n               <div class=\"col-md-12\">\n                    <mat-form-field>\n                        <input matInput placeholder=\"Name\" type=\"text\" formControlName=\"name\" [(ngModel)]=\"name\" required>\n                        <mat-error>This field is mandatory.</mat-error>\n                    </mat-form-field>\n                </div>\n            </div>\n            <div class=\"row container\">\n                <div class=\"col-md-12\">\n                    <mat-form-field>\n                        <input matInput placeholder=\"Email\" [disabled]=\"editmode\" formControlName=\"email\" [(ngModel)]=\"email\"\n                        required>\n                        <mat-error>Please add valid email.</mat-error>\n                    </mat-form-field>\n                </div>\n            </div>\n            <div class=\"row container\">\n                <div class=\"col-md-12\">\n                     <mat-form-field>\n                         <input matInput placeholder=\"Mobile Number\" [(ngModel)]=\"mobile\"\n                        (keypress)=\"numberOnly($event)\" formControlName=\"mobile\" type=\"text\" maxlength=\"10\" required>\n                         <mat-error>Please add 10 Digit.</mat-error>\n                     </mat-form-field>\n                 </div>\n             </div>\n             <div class=\"row container\">\n                <div class=\"col-md-12\">\n                     <!-- <mat-form-field>\n                         <input matInput placeholder=\"Organization Name\" type=\"text\" formControlName=\"orgName\" [(ngModel)]=\"orgName\" required>\n                         <mat-error>This field is mandatory.</mat-error>\n                     </mat-form-field> -->\n                     <mat-form-field>\n                        <mat-label>Organization Name</mat-label>\n                        <mat-select [(value)]=\"orgName\" formControlName=\"orgName\"  required>\n                          <mat-option *ngFor=\"let item of orgReference\" [value]=\"item.org_name\" >\n                            {{item.org_name}}\n                          </mat-option>\n                        </mat-select>\n                        <mat-error>This field is mandatory.</mat-error>\n                    </mat-form-field>\n                 </div>\n             </div>\n            <!-- <div class=\"row container\">\n                <div class=\"col-md-12\">\n                    <mat-form-field>\n                        <mat-label>Role Type</mat-label>\n                        <mat-select [(value)]=\"selectedroletype\" (selectionChange)=\"roletypeChanged($event)\" required>\n                          <mat-option *ngFor=\"let role of rolesReference\" [value]=\"role.id\" >\n                            {{role.role}}\n                          </mat-option>\n                          <mat-error>This field is mandatory.</mat-error> \n                        </mat-select>\n                    </mat-form-field>\n            </div>\n        </div> -->\n            <!-- <div class=\"row\">\n                <div class=\"col-md-12 asterisk_input\">\n                    <mat-form-field>\n                        <input matInput placeholder=\"Mobile\" (keypress)=\"numberOnly($event)\" [(ngModel)]=\"mobile\" type=\"text\" maxlength=\"12\">\n                    </mat-form-field>\n                </div>\n            </div> -->\n            <!-- <div class=\"row\">\n                <div class=\"col-md-12 asterisk_input\">\n                  \n                </div>  <app-reference-data-selector  [placeholder]=\"roleLabel\" [default-value]=\"selectedrole\" [options]=\"rolesReference\" (chosen-value)=\"roleChanged($event)\"></app-reference-data-selector>\n            </div> -->\n          \n            <div class=\"row\">\n                <div class=\"col-md-12\">\n                    <button type=\"button\" class=\"btn btn-default bg-success pull-right m-3\" *ngIf=\"save_user_btn\" [disabled]=\"!myForm.valid\" (click)=\"saveUser()\">Save\n                        <span *ngIf=\"showSpinner\" class=\"spinner-border spinner-border-sm\" role=\"status\" aria-hidden=\"true\"></span>\n                    </button>\n                    <button type=\"button\" class=\"btn btn-default bg-success pull-right m-3\" *ngIf=\"update_user_btn\" [disabled]=\"!myForm.valid\" (click)=\"updateUser()\">Update\n                        <span *ngIf=\"showSpinner\" class=\"spinner-border spinner-border-sm\" role=\"status\" aria-hidden=\"true\"></span>\n                    </button>        \n                    <button type=\"button\" class=\"btn btn-default bg-danger pull-right m-3\" mat-dialog-close>Cancel</button>   \n                </div>\n            </div>\n        </form>\n</div>\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"col-lg-12\">\n<h1 mat-dialog-title>{{dialogTitle}}</h1>\n<div mat-dialog-content class=\"cardbox\">\n    <form [formGroup]=\"myForm\" (ngSubmit)=\"saveUser()\">\n            <div class=\"row container\">\n               <div class=\"col-md-12\">\n                    <mat-form-field>\n                        <input matInput placeholder=\"Name\" type=\"text\" formControlName=\"name\" [(ngModel)]=\"name\" required>\n                        <mat-error>This field is mandatory.</mat-error>\n                    </mat-form-field>\n                </div>\n            </div>\n            <div class=\"row container\">\n                <div class=\"col-md-12\">\n                    <mat-form-field>\n                        <input matInput placeholder=\"Email\" [disabled]=\"editmode\" formControlName=\"email\" [(ngModel)]=\"email\"\n                        required>\n                        <mat-error>Please add valid email.</mat-error>\n                    </mat-form-field>\n                </div>\n            </div>\n            <div class=\"row container\">\n                <div class=\"col-md-12\">\n                     <mat-form-field>\n                         <input matInput placeholder=\"Mobile Number\" [(ngModel)]=\"mobile\"\n                        (keypress)=\"numberOnly($event)\" formControlName=\"mobile\" type=\"text\" maxlength=\"10\" required>\n                         <mat-error>Please add 10 Digit.</mat-error>\n                     </mat-form-field>\n                 </div>\n             </div>\n             <div class=\"row container\">\n                <div class=\"col-md-12\">\n                     <!-- <mat-form-field>\n                         <input matInput placeholder=\"Organization Name\" type=\"text\" formControlName=\"orgName\" [(ngModel)]=\"orgName\" required>\n                         <mat-error>This field is mandatory.</mat-error>\n                     </mat-form-field> -->\n                     <mat-form-field>\n                        <mat-label>Organization Name</mat-label>\n                        <mat-select [(ngModel)]=\"orgName\" formControlName=\"orgName\"  required>\n                          <mat-option *ngFor=\"let item of orgReference\" [value]=\"item.org_name\" >\n                            {{item.org_name}}\n                          </mat-option>\n                        </mat-select>\n                        <mat-error>This field is mandatory.</mat-error>\n                    </mat-form-field>\n                 </div>\n             </div>\n            <!-- <div class=\"row container\">\n                <div class=\"col-md-12\">\n                    <mat-form-field>\n                        <mat-label>Role Type</mat-label>\n                        <mat-select [(value)]=\"selectedroletype\" (selectionChange)=\"roletypeChanged($event)\" required>\n                          <mat-option *ngFor=\"let role of rolesReference\" [value]=\"role.id\" >\n                            {{role.role}}\n                          </mat-option>\n                          <mat-error>This field is mandatory.</mat-error> \n                        </mat-select>\n                    </mat-form-field>\n            </div>\n        </div> -->\n            <!-- <div class=\"row\">\n                <div class=\"col-md-12 asterisk_input\">\n                    <mat-form-field>\n                        <input matInput placeholder=\"Mobile\" (keypress)=\"numberOnly($event)\" [(ngModel)]=\"mobile\" type=\"text\" maxlength=\"12\">\n                    </mat-form-field>\n                </div>\n            </div> -->\n            <!-- <div class=\"row\">\n                <div class=\"col-md-12 asterisk_input\">\n                  \n                </div>  <app-reference-data-selector  [placeholder]=\"roleLabel\" [default-value]=\"selectedrole\" [options]=\"rolesReference\" (chosen-value)=\"roleChanged($event)\"></app-reference-data-selector>\n            </div> -->\n          \n            <div class=\"row\">\n                <div class=\"col-md-12\">\n                    <button type=\"button\" class=\"btn btn-default bg-success pull-right m-3\" *ngIf=\"save_user_btn\" [disabled]=\"!myForm.valid\" (click)=\"saveUser()\">Save\n                        <span *ngIf=\"showSpinner\" class=\"spinner-border spinner-border-sm\" role=\"status\" aria-hidden=\"true\"></span>\n                    </button>\n                    <button type=\"button\" class=\"btn btn-default bg-success pull-right m-3\" *ngIf=\"update_user_btn\" [disabled]=\"!myForm.valid\" (click)=\"updateUser()\">Update\n                        <span *ngIf=\"showSpinner\" class=\"spinner-border spinner-border-sm\" role=\"status\" aria-hidden=\"true\"></span>\n                    </button>        \n                    <button type=\"button\" class=\"btn btn-default bg-danger pull-right m-3\" mat-dialog-close>Cancel</button>   \n                </div>\n            </div>\n        </form>\n</div>\n</div>");
 
 /***/ }),
 
@@ -2474,7 +2474,7 @@ var ForgotPasswordComponent = /** @class */ (function () {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (".forward{\r\n    margin-top: 50px !important;\r\n}\r\n.open{\r\n    border-radius: 2.5rem !important;\r\n    background-color: #1d8b4e !important;\r\n    border: 2px solid #1d8b4e !important;\r\n    padding: 8px 20px;\r\n}\r\n.open:hover{\r\n    background-color: white !important;\r\n    color: #1d8b4e !important;\r\n    /* border: 2px solid #1d8b4e !important; */\r\n}\r\nth,td{\r\n    font-family: 'Montserrat', sans-serif;\r\n}\r\n#forward .gap p{\r\n    padding-right: 5px;\r\n}\r\n#sending{\r\n    height: 200px;\r\n    width: 300px;\r\n    text-align: center;\r\n  }\r\n#sending .h3{\r\n    padding: 20px;\r\n  }\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZm9yd2FyZC1tZXNzYWdlL2ZvcndhcmQtbWVzc2FnZS5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksMkJBQTJCO0FBQy9CO0FBQ0E7SUFDSSxnQ0FBZ0M7SUFDaEMsb0NBQW9DO0lBQ3BDLG9DQUFvQztJQUNwQyxpQkFBaUI7QUFDckI7QUFDQTtJQUNJLGtDQUFrQztJQUNsQyx5QkFBeUI7SUFDekIsMENBQTBDO0FBQzlDO0FBQ0E7SUFDSSxxQ0FBcUM7QUFDekM7QUFDQTtJQUNJLGtCQUFrQjtBQUN0QjtBQUVBO0lBQ0ksYUFBYTtJQUNiLFlBQVk7SUFDWixrQkFBa0I7RUFDcEI7QUFDQTtJQUNFLGFBQWE7RUFDZiIsImZpbGUiOiJzcmMvYXBwL2ZvcndhcmQtbWVzc2FnZS9mb3J3YXJkLW1lc3NhZ2UuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5mb3J3YXJke1xyXG4gICAgbWFyZ2luLXRvcDogNTBweCAhaW1wb3J0YW50O1xyXG59XHJcbi5vcGVue1xyXG4gICAgYm9yZGVyLXJhZGl1czogMi41cmVtICFpbXBvcnRhbnQ7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMWQ4YjRlICFpbXBvcnRhbnQ7XHJcbiAgICBib3JkZXI6IDJweCBzb2xpZCAjMWQ4YjRlICFpbXBvcnRhbnQ7XHJcbiAgICBwYWRkaW5nOiA4cHggMjBweDtcclxufVxyXG4ub3Blbjpob3ZlcntcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlICFpbXBvcnRhbnQ7XHJcbiAgICBjb2xvcjogIzFkOGI0ZSAhaW1wb3J0YW50O1xyXG4gICAgLyogYm9yZGVyOiAycHggc29saWQgIzFkOGI0ZSAhaW1wb3J0YW50OyAqL1xyXG59XHJcbnRoLHRke1xyXG4gICAgZm9udC1mYW1pbHk6ICdNb250c2VycmF0Jywgc2Fucy1zZXJpZjtcclxufVxyXG4jZm9yd2FyZCAuZ2FwIHB7XHJcbiAgICBwYWRkaW5nLXJpZ2h0OiA1cHg7XHJcbn1cclxuXHJcbiNzZW5kaW5ne1xyXG4gICAgaGVpZ2h0OiAyMDBweDtcclxuICAgIHdpZHRoOiAzMDBweDtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICB9XHJcbiAgI3NlbmRpbmcgLmgze1xyXG4gICAgcGFkZGluZzogMjBweDtcclxuICB9Il19 */");
+/* harmony default export */ __webpack_exports__["default"] = (".forward{\r\n    margin-top: 50px !important;\r\n}\r\n.open{\r\n    border-radius: 2.5rem !important;\r\n    background-color: #1d8b4e !important;\r\n    border: 2px solid #1d8b4e !important;\r\n    padding: 8px 20px;\r\n}\r\n.open:hover{\r\n    background-color: white !important;\r\n    color: #1d8b4e !important;\r\n    /* border: 2px solid #1d8b4e !important; */\r\n}\r\n@media(max-width: 600px) {\r\n    /* .mobile-label {\r\n      width: 80px;\r\n      display: inline-block;\r\n          font-weight: bold;\r\n    } */\r\n  \r\n    .mat-header-row {\r\n      display: none;\r\n    }\r\n  \r\n    .mat-row { \r\n      flex-direction: column;\r\n      align-items: start;\r\n      padding: 8px 44px;\r\n    }\r\n  }\r\n.mat-table {\r\n    overflow: auto;\r\n    font-family: 'Montserrat', sans-serif;\r\n  }\r\n#forward .gap p{\r\n    padding-right: 5px;\r\n}\r\n#sending{\r\n    height: 200px;\r\n    width: 300px;\r\n    text-align: center;\r\n  }\r\n#sending .h3{\r\n    padding: 20px;\r\n  }\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZm9yd2FyZC1tZXNzYWdlL2ZvcndhcmQtbWVzc2FnZS5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksMkJBQTJCO0FBQy9CO0FBQ0E7SUFDSSxnQ0FBZ0M7SUFDaEMsb0NBQW9DO0lBQ3BDLG9DQUFvQztJQUNwQyxpQkFBaUI7QUFDckI7QUFDQTtJQUNJLGtDQUFrQztJQUNsQyx5QkFBeUI7SUFDekIsMENBQTBDO0FBQzlDO0FBQ0E7SUFDSTs7OztPQUlHOztJQUVIO01BQ0UsYUFBYTtJQUNmOztJQUVBO01BQ0Usc0JBQXNCO01BQ3RCLGtCQUFrQjtNQUNsQixpQkFBaUI7SUFDbkI7RUFDRjtBQUVBO0lBQ0UsY0FBYztJQUNkLHFDQUFxQztFQUN2QztBQUVGO0lBQ0ksa0JBQWtCO0FBQ3RCO0FBRUE7SUFDSSxhQUFhO0lBQ2IsWUFBWTtJQUNaLGtCQUFrQjtFQUNwQjtBQUNBO0lBQ0UsYUFBYTtFQUNmIiwiZmlsZSI6InNyYy9hcHAvZm9yd2FyZC1tZXNzYWdlL2ZvcndhcmQtbWVzc2FnZS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmZvcndhcmR7XHJcbiAgICBtYXJnaW4tdG9wOiA1MHB4ICFpbXBvcnRhbnQ7XHJcbn1cclxuLm9wZW57XHJcbiAgICBib3JkZXItcmFkaXVzOiAyLjVyZW0gIWltcG9ydGFudDtcclxuICAgIGJhY2tncm91bmQtY29sb3I6ICMxZDhiNGUgIWltcG9ydGFudDtcclxuICAgIGJvcmRlcjogMnB4IHNvbGlkICMxZDhiNGUgIWltcG9ydGFudDtcclxuICAgIHBhZGRpbmc6IDhweCAyMHB4O1xyXG59XHJcbi5vcGVuOmhvdmVye1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGUgIWltcG9ydGFudDtcclxuICAgIGNvbG9yOiAjMWQ4YjRlICFpbXBvcnRhbnQ7XHJcbiAgICAvKiBib3JkZXI6IDJweCBzb2xpZCAjMWQ4YjRlICFpbXBvcnRhbnQ7ICovXHJcbn1cclxuQG1lZGlhKG1heC13aWR0aDogNjAwcHgpIHtcclxuICAgIC8qIC5tb2JpbGUtbGFiZWwge1xyXG4gICAgICB3aWR0aDogODBweDtcclxuICAgICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xyXG4gICAgICAgICAgZm9udC13ZWlnaHQ6IGJvbGQ7XHJcbiAgICB9ICovXHJcbiAgXHJcbiAgICAubWF0LWhlYWRlci1yb3cge1xyXG4gICAgICBkaXNwbGF5OiBub25lO1xyXG4gICAgfVxyXG4gIFxyXG4gICAgLm1hdC1yb3cgeyBcclxuICAgICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcclxuICAgICAgYWxpZ24taXRlbXM6IHN0YXJ0O1xyXG4gICAgICBwYWRkaW5nOiA4cHggNDRweDtcclxuICAgIH1cclxuICB9XHJcbiAgXHJcbiAgLm1hdC10YWJsZSB7XHJcbiAgICBvdmVyZmxvdzogYXV0bztcclxuICAgIGZvbnQtZmFtaWx5OiAnTW9udHNlcnJhdCcsIHNhbnMtc2VyaWY7XHJcbiAgfVxyXG5cclxuI2ZvcndhcmQgLmdhcCBwe1xyXG4gICAgcGFkZGluZy1yaWdodDogNXB4O1xyXG59XHJcblxyXG4jc2VuZGluZ3tcclxuICAgIGhlaWdodDogMjAwcHg7XHJcbiAgICB3aWR0aDogMzAwcHg7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgfVxyXG4gICNzZW5kaW5nIC5oM3tcclxuICAgIHBhZGRpbmc6IDIwcHg7XHJcbiAgfSJdfQ== */");
 
 /***/ }),
 
@@ -3054,7 +3054,7 @@ var UrlConstants = /** @class */ (function () {
     function UrlConstants() {
     }
     UrlConstants.modal_name = "NovoNordiskIN";
-    UrlConstants.MAINURL = 'http://54.179.156.122:3399/';
+    UrlConstants.MAINURL = 'http://13.232.13.77:3399/';
     // static usersGetTableItems = 'ex/register/submit';
     UrlConstants.saveUser = 'portal/users/addupdateuser';
     UrlConstants.updateUser = 'portal/users/updateportal';
@@ -3085,6 +3085,7 @@ var UrlConstants = /** @class */ (function () {
     UrlConstants.getMobileUsers = 'portal/users/mobusr';
     UrlConstants.defaultsetting = 'portal/users/radio';
     UrlConstants.defaultsettings = 'portal/users/defaultsetting';
+    UrlConstants.excelData = 'abhi';
     return UrlConstants;
 }());
 
@@ -5261,6 +5262,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_material_dialog__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material/dialog */ "./node_modules/@angular/material/fesm5/dialog.js");
+/* harmony import */ var xlsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! xlsx */ "./node_modules/xlsx/xlsx.js");
+/* harmony import */ var xlsx__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(xlsx__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _upload_excel_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./upload-excel.service */ "./src/app/upload-excel/upload-excel.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -5276,14 +5280,18 @@ var __importDefault = (undefined && undefined.__importDefault) || function (mod)
 
 
 
+
+
 var sent = false;
 var excelFile;
 var UploadExcelComponent = /** @class */ (function () {
-    function UploadExcelComponent(formbuilder, dialog) {
+    function UploadExcelComponent(formbuilder, dialog, excelService) {
         this.formbuilder = formbuilder;
         this.dialog = dialog;
+        this.excelService = excelService;
         this.uploaded = false;
         this.fileName = '';
+        this.data = [];
         this.myForm = formbuilder.group({
             excel: ['']
         });
@@ -5291,23 +5299,40 @@ var UploadExcelComponent = /** @class */ (function () {
     UploadExcelComponent.prototype.ngOnInit = function () {
     };
     UploadExcelComponent.prototype.onFileUpload = function (evt) {
+        var _this = this;
         this.fileName = evt.target.files[0].name;
         // evt.siblings(".custom-file-label").addClass("selected").html(fileName);
         excelFile = evt.target.files[0];
-        console.log(excelFile);
         this.uploaded = true;
-        // this.saveExcel(excelFile);
+        var reader = new FileReader();
+        reader.onload = function (e) {
+            var bstr = e.target.result;
+            var wb = xlsx__WEBPACK_IMPORTED_MODULE_3__["read"](bstr, { type: 'binary' });
+            var wsname = wb.SheetNames[0];
+            var ws = wb.Sheets[wsname];
+            console.log(ws);
+            _this.data = (xlsx__WEBPACK_IMPORTED_MODULE_3__["utils"].sheet_to_json(ws, { header: 2 }));
+            // console.log(this.data);
+        };
+        reader.readAsBinaryString(excelFile);
     };
     UploadExcelComponent.prototype.saveExcel = function () {
-        var _this = this;
-        var dialogRef = this.dialog.open(UploadDialog, {});
-        setInterval(function () {
-            dialogRef.close();
-        }, 3000);
-        dialogRef.afterClosed().subscribe(function (data) {
-            sent = true;
-            _this.dialog.open(UploadDialog, {});
-            sent = false;
+        // let dialogRef = this.dialog.open(UploadDialog, {
+        // });  
+        // setInterval(() => {
+        //   dialogRef.close();
+        // }, 3000);
+        // dialogRef.afterClosed().subscribe(
+        //   data =>{
+        //   sent =true;
+        //   this.dialog.open(UploadDialog, {
+        //   });
+        //   sent= false;
+        // }
+        // );
+        console.log(this.data);
+        this.excelService.excelData(this.data).subscribe(function (response) {
+            console.log(response);
         });
         excelFile = null;
         this.myInputVariable.nativeElement.value = "";
@@ -5316,7 +5341,8 @@ var UploadExcelComponent = /** @class */ (function () {
     };
     UploadExcelComponent.ctorParameters = function () { return [
         { type: _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormBuilder"] },
-        { type: _angular_material_dialog__WEBPACK_IMPORTED_MODULE_2__["MatDialog"] }
+        { type: _angular_material_dialog__WEBPACK_IMPORTED_MODULE_2__["MatDialog"] },
+        { type: _upload_excel_service__WEBPACK_IMPORTED_MODULE_4__["UploadExcelService"] }
     ]; };
     __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])("myInput"),
@@ -5328,7 +5354,7 @@ var UploadExcelComponent = /** @class */ (function () {
             template: __importDefault(__webpack_require__(/*! raw-loader!./upload-excel.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/upload-excel/upload-excel.component.html")).default,
             styles: [__importDefault(__webpack_require__(/*! ./upload-excel.component.css */ "./src/app/upload-excel/upload-excel.component.css")).default]
         }),
-        __metadata("design:paramtypes", [_angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormBuilder"], _angular_material_dialog__WEBPACK_IMPORTED_MODULE_2__["MatDialog"]])
+        __metadata("design:paramtypes", [_angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormBuilder"], _angular_material_dialog__WEBPACK_IMPORTED_MODULE_2__["MatDialog"], _upload_excel_service__WEBPACK_IMPORTED_MODULE_4__["UploadExcelService"]])
     ], UploadExcelComponent);
     return UploadExcelComponent;
 }());
@@ -5354,6 +5380,55 @@ var UploadDialog = /** @class */ (function () {
         __metadata("design:paramtypes", [_angular_material_dialog__WEBPACK_IMPORTED_MODULE_2__["MatDialog"], _angular_material_dialog__WEBPACK_IMPORTED_MODULE_2__["MatDialogRef"]])
     ], UploadDialog);
     return UploadDialog;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/upload-excel/upload-excel.service.ts":
+/*!******************************************************!*\
+  !*** ./src/app/upload-excel/upload-excel.service.ts ***!
+  \******************************************************/
+/*! exports provided: UploadExcelService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UploadExcelService", function() { return UploadExcelService; });
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _helpers_urlconstant__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../helpers/urlconstant */ "./src/app/helpers/urlconstant.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var UploadExcelService = /** @class */ (function () {
+    function UploadExcelService(httpClient) {
+        this.httpClient = httpClient;
+    }
+    UploadExcelService.prototype.excelData = function (payload) {
+        var url = "http://192.168.1.11/" + _helpers_urlconstant__WEBPACK_IMPORTED_MODULE_2__["UrlConstants"].excelData;
+        return this.httpClient.post(url, payload);
+    };
+    UploadExcelService.ctorParameters = function () { return [
+        { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_0__["HttpClient"] }
+    ]; };
+    UploadExcelService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+            providedIn: 'root'
+        }),
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_0__["HttpClient"]])
+    ], UploadExcelService);
+    return UploadExcelService;
 }());
 
 
@@ -6516,6 +6591,39 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 
 module.exports = __webpack_require__(/*! D:\appbee\prasannaappbee-online-video-stream-frontend-0fb6ed91b364\src\main.ts */"./src/main.ts");
 
+
+/***/ }),
+
+/***/ 1:
+/*!********************!*\
+  !*** fs (ignored) ***!
+  \********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 2:
+/*!************************!*\
+  !*** crypto (ignored) ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 3:
+/*!************************!*\
+  !*** stream (ignored) ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
 
 /***/ })
 

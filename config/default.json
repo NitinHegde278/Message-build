@@ -6,14 +6,14 @@
   "version": "v2.1.48",
   "connectionPool": {
     "connectionLimit": 5000,
-    "host": "localhost",
-    "user": "root",
-    "password": "root123",
+    "host": "jkf-database.cmkze41h9ady.ap-south-1.rds.amazonaws.com",
+    "user": "jkf1",
+    "password": "JantaKaFaisla123",
     "database": "excel_upload"
   },
   "privatekey": "",
   "gkey": "",
   "expiresIn": "2h",
-  "host_link": "http://54.179.156.122:3399/#"
+  "host_link": "http://13.232.13.77:3399/#"
   
 }

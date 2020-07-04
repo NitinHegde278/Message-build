@@ -392,12 +392,14 @@ router.post('/updateportal', async (req, res) => {
   let role = req.body.role ? req.body.role : "";
   let mobile = req.body.mobile ? req.body.mobile : "";
   let email = req.body.email ? req.body.email : "";
+  let organization_name = req.body.organization_name ? req.body.organization_name: "";
   let updatepasswordquery = `UPDATE t_portal_users
   SET
      name = '${name}',
      role_id = ${role},
      mobile = ${mobile},
-     email = '${email}'
+     email = '${email}',
+     organization_name = '${organization_name}'
 
 WHERE id = ${id} `;
   console.log("sql", updatepasswordquery)

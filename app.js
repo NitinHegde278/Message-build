@@ -63,8 +63,8 @@ app.use(flash());
 // all environments
 app.use(cors({
   origin: [
-    "http://localhost:5400",
-    "http://10.0.0.99:5400"
+    "http://localhost:5000",
+    "http://10.0.0.99:5000"
   ], credentials: true
 }));
 //app.set("port", 8000);
