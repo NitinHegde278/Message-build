@@ -3,7 +3,7 @@
   "port": 3399,
   "httpsPort": 6000,
   "path": "",
-  "version": "v2.1.48",
+  "version": "v4.2.6",
   "connectionPool": {
     "connectionLimit": 5000,
     "host": "jkf-database.cmkze41h9ady.ap-south-1.rds.amazonaws.com",
