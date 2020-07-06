@@ -438,7 +438,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n<div class=\"container\" style=\"text-align: center; margin-top: 60px; font-size: 20px;\">\n    <p>Upload Excel Sheet File</p>\n    <p>Make Sure columns are exactly as shown below</p>\n\n</div>\n \n<!-- <div class=\"row\"> -->\n<div class=\"container\" style=\"text-align: center;\">\n    <img src=\"/assets/img/excel.jpg\" alt=\"sample image\" class=\"img-fluid\" style=\"height: 250px; width: 800px;border: 2px solid #1d8b4e;\">\n    <div class=\"pull-left\" style=\"margin:2% 0% 0% 12%;\" id=\"template\">\n\n        <p>Download a Template File</p>\n        <button class=\"btn\">Download Excel Template</button>\n    </div>\n</div><br>\n<!-- git -->\n<div class=\"pull-right\" style=\"margin:100px 200px 0px 0px;text-align: right;\">\n    <form>\n        <!-- <mat-form-field>\n            <input matInput type=\"file\" name=\"file\" accept=\".xlsx, .xls\" formControlName=\"excel\" (change)=\"onFileUpload($event)\">\n        </mat-form-field>\n        <button class=\"btn\" type=\"submit\">Upload</button> -->\n        <!-- <div class=\"input-group mb-3\">\n            <div class=\"custom-file\">\n                \n              <input #myInput type=\"file\" class=\"custom-file-input\" \n              id=\"customFile\" accept=\".xlsx, .xls\" (change)=\"onFileUpload($event)\">\n                <label class=\"custom-file-label\" for=\"customFile\" style=\"overflow: hidden; height: 28px;text-align: left;\">{{fileName}}</label>\n                    \n            </div>\n          </div> -->\n          \n          <div class=\"upload-btn-wrapper\">\n            <button class=\"btn\" id=\"choose\">\n            <input #myInput type=\"file\" name=\"myfile\" accept=\".xlsx, .xls\" (change)=\"onFileUpload($event)\"/>Choose a File</button>\n          </div>\n          <p style=\"max-width: 280px;max-height: 20px;overflow: hidden;\">{{fileName}}</p>\n          <button class=\"btn upload\" [disabled]=\"!uploaded\" type=\"submit\" (click)=\"saveExcel()\"><mat-icon>cloud_upload</mat-icon> Upload</button>\n    </form>\n</div>\n\n\n\n");
+/* harmony default export */ __webpack_exports__["default"] = ("\n<div class=\"container\" style=\"text-align: center; margin-top: 60px; font-size: 20px;\">\n    <p>Upload Excel Sheet File</p>\n    <p>Make Sure columns are exactly as shown below</p>\n\n</div>\n \n<!-- <div class=\"row\"> -->\n<div class=\"container\" style=\"text-align: center;\">\n    <img src=\"/assets/img/excel.jpg\" alt=\"sample image\" class=\"img-fluid\" style=\"height: 250px; width: 800px;border: 2px solid #1d8b4e;\">\n    <div class=\"pull-left\" style=\"margin:2% 0% 0% 12%;\" id=\"template\">\n\n        <p>Download a Template File</p>\n        <button class=\"btn\">Download Excel Template</button>\n    </div>\n</div><br>\n<!-- git -->\n<div class=\"pull-right\" style=\"margin:100px 200px 0px 0px;text-align: right;\">\n    <form>\n        <!-- <mat-form-field>\n            <input matInput type=\"file\" name=\"file\" accept=\".xlsx, .xls\" formControlName=\"excel\" (change)=\"onFileUpload($event)\">\n        </mat-form-field>\n        <button class=\"btn\" type=\"submit\">Upload</button> -->\n        <!-- <div class=\"input-group mb-3\">\n            <div class=\"custom-file\">\n                \n              <input #myInput type=\"file\" class=\"custom-file-input\" \n              id=\"customFile\" accept=\".xlsx, .xls\" (change)=\"onFileUpload($event)\">\n                <label class=\"custom-file-label\" for=\"customFile\" style=\"overflow: hidden; height: 28px;text-align: left;\">{{fileName}}</label>\n                    \n            </div>\n          </div> -->\n          \n          <div class=\"upload-btn-wrapper\">\n            <button class=\"btn\" id=\"choose\">\n            <input #myInput type=\"file\" name=\"myfile\" accept=\".xlsx, .xls\" (change)=\"onFileUpload($event)\"/>Choose a File</button>\n          </div>\n          <p style=\"max-width: 280px;max-height: 20px;overflow: hidden;\">{{fileName}}</p>\n          <button class=\"btn upload\" [disabled]=\"!uploaded\" type=\"submit\" (click)=\"saveExcel()\"><mat-icon>cloud_upload</mat-icon> Upload\n            <span *ngIf=\"showSpinner\" class=\"spinner-border spinner-border-sm\" role=\"status\" aria-hidden=\"true\"></span>\n        </button>\n    </form>\n</div>\n\n\n\n");
 
 /***/ }),
 
@@ -3054,7 +3054,7 @@ var UrlConstants = /** @class */ (function () {
     function UrlConstants() {
     }
     UrlConstants.modal_name = "NovoNordiskIN";
-    UrlConstants.MAINURL = '/';
+    UrlConstants.MAINURL = 'http://localhost:3399/';
     // static usersGetTableItems = 'ex/register/submit';
     UrlConstants.saveUser = 'portal/users/addupdateuser';
     UrlConstants.updateUser = 'portal/users/updateportal';
@@ -3085,7 +3085,7 @@ var UrlConstants = /** @class */ (function () {
     UrlConstants.getMobileUsers = 'portal/users/mobusr';
     UrlConstants.defaultsetting = 'portal/users/radio';
     UrlConstants.defaultsettings = 'portal/users/defaultsetting';
-    UrlConstants.excelData = 'abhi';
+    UrlConstants.excelData = 'portal/users/upload/excel';
     return UrlConstants;
 }());
 
@@ -5265,6 +5265,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var xlsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! xlsx */ "./node_modules/xlsx/xlsx.js");
 /* harmony import */ var xlsx__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(xlsx__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _upload_excel_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./upload-excel.service */ "./src/app/upload-excel/upload-excel.service.ts");
+/* harmony import */ var angular2_toaster__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! angular2-toaster */ "./node_modules/angular2-toaster/angular2-toaster.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -5274,6 +5275,9 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+var __param = (undefined && undefined.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
 var __importDefault = (undefined && undefined.__importDefault) || function (mod) {
   return (mod && mod.__esModule) ? mod : { "default": mod };
 };
@@ -5282,16 +5286,19 @@ var __importDefault = (undefined && undefined.__importDefault) || function (mod)
 
 
 
+
 var sent = false;
 var excelFile;
 var UploadExcelComponent = /** @class */ (function () {
-    function UploadExcelComponent(formbuilder, dialog, excelService) {
+    function UploadExcelComponent(formbuilder, dialog, excelService, toasterService) {
         this.formbuilder = formbuilder;
         this.dialog = dialog;
         this.excelService = excelService;
+        this.toasterService = toasterService;
         this.uploaded = false;
         this.fileName = '';
         this.data = [];
+        this.showSpinner = false;
         this.myForm = formbuilder.group({
             excel: ['']
         });
@@ -5310,7 +5317,7 @@ var UploadExcelComponent = /** @class */ (function () {
             var wb = xlsx__WEBPACK_IMPORTED_MODULE_3__["read"](bstr, { type: 'binary' });
             var wsname = wb.SheetNames[0];
             var ws = wb.Sheets[wsname];
-            console.log(ws);
+            // console.log(ws);
             _this.data = (xlsx__WEBPACK_IMPORTED_MODULE_3__["utils"].sheet_to_json(ws, { header: 2 }));
             // console.log(this.data);
         };
@@ -5318,6 +5325,7 @@ var UploadExcelComponent = /** @class */ (function () {
     };
     UploadExcelComponent.prototype.saveExcel = function () {
         // let dialogRef = this.dialog.open(UploadDialog, {
+        var _this = this;
         // });  
         // setInterval(() => {
         //   dialogRef.close();
@@ -5330,9 +5338,18 @@ var UploadExcelComponent = /** @class */ (function () {
         //   sent= false;
         // }
         // );
+        this.showSpinner = true;
         console.log(this.data);
         this.excelService.excelData(this.data).subscribe(function (response) {
-            console.log(response);
+            if (response == "200") {
+                _this.showSpinner = false;
+                console.log(response);
+                _this.toasterService.pop("success", "Uploaded Successfully");
+            }
+            else {
+                _this.showSpinner = false;
+                _this.toasterService.pop("error", "Something went wrong!");
+            }
         });
         excelFile = null;
         this.myInputVariable.nativeElement.value = "";
@@ -5342,7 +5359,8 @@ var UploadExcelComponent = /** @class */ (function () {
     UploadExcelComponent.ctorParameters = function () { return [
         { type: _angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormBuilder"] },
         { type: _angular_material_dialog__WEBPACK_IMPORTED_MODULE_2__["MatDialog"] },
-        { type: _upload_excel_service__WEBPACK_IMPORTED_MODULE_4__["UploadExcelService"] }
+        { type: _upload_excel_service__WEBPACK_IMPORTED_MODULE_4__["UploadExcelService"] },
+        { type: angular2_toaster__WEBPACK_IMPORTED_MODULE_5__["ToasterService"], decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [angular2_toaster__WEBPACK_IMPORTED_MODULE_5__["ToasterService"],] }] }
     ]; };
     __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])("myInput"),
@@ -5354,7 +5372,9 @@ var UploadExcelComponent = /** @class */ (function () {
             template: __importDefault(__webpack_require__(/*! raw-loader!./upload-excel.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/upload-excel/upload-excel.component.html")).default,
             styles: [__importDefault(__webpack_require__(/*! ./upload-excel.component.css */ "./src/app/upload-excel/upload-excel.component.css")).default]
         }),
-        __metadata("design:paramtypes", [_angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormBuilder"], _angular_material_dialog__WEBPACK_IMPORTED_MODULE_2__["MatDialog"], _upload_excel_service__WEBPACK_IMPORTED_MODULE_4__["UploadExcelService"]])
+        __param(3, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"])(angular2_toaster__WEBPACK_IMPORTED_MODULE_5__["ToasterService"])),
+        __metadata("design:paramtypes", [_angular_forms__WEBPACK_IMPORTED_MODULE_0__["FormBuilder"], _angular_material_dialog__WEBPACK_IMPORTED_MODULE_2__["MatDialog"], _upload_excel_service__WEBPACK_IMPORTED_MODULE_4__["UploadExcelService"],
+            angular2_toaster__WEBPACK_IMPORTED_MODULE_5__["ToasterService"]])
     ], UploadExcelComponent);
     return UploadExcelComponent;
 }());
@@ -5416,7 +5436,7 @@ var UploadExcelService = /** @class */ (function () {
         this.httpClient = httpClient;
     }
     UploadExcelService.prototype.excelData = function (payload) {
-        var url = "http://192.168.1.11/" + _helpers_urlconstant__WEBPACK_IMPORTED_MODULE_2__["UrlConstants"].excelData;
+        var url = _helpers_urlconstant__WEBPACK_IMPORTED_MODULE_2__["UrlConstants"].MAINURL + _helpers_urlconstant__WEBPACK_IMPORTED_MODULE_2__["UrlConstants"].excelData;
         return this.httpClient.post(url, payload);
     };
     UploadExcelService.ctorParameters = function () { return [

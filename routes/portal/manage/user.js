@@ -58,6 +58,24 @@ const signOptions = {
 };
 const key = config.get('gkey')
 
+const ENC_KEY = "bf3c199c2470cb477d907b1e0917c17b"; // set random encryption key
+const IV = "5183666c72eec9e4"; // set random initialisation vector
+// ENC_KEY and IV can be generated as crypto.randomBytes(32).toString('hex');
+
+// const phrase = "who let the dogs out";
+
+var encrypt = ((val) => {
+  let cipher = crypto.createCipheriv('aes-256-cbc', ENC_KEY, IV);
+  let encrypted = cipher.update(val, 'utf8', 'base64');
+  encrypted += cipher.final('base64');
+  return encrypted;
+});
+
+var decrypt = ((encrypted) => {
+  let decipher = crypto.createDecipheriv('aes-256-cbc', ENC_KEY, IV);
+  let decrypted = decipher.update(encrypted, 'base64', 'utf8');
+  return (decrypted + decipher.final('utf8'));
+});
 
 // function encrypt(text){
 //   console.log(text)
@@ -663,5 +681,47 @@ let runQuery = async (Query, vals) => {
     });
   });
 };
+
+router.post('/upload/excel',async(req,res)=>{
+  insresponse = "";
+  var incomingdata = req.body;
+  // let json = JSON.stringify(in)
+  for(var i=0; i<incomingdata.length;i++){
+    let Full_Name = incomingdata[i].Full_Name  && encrypt(incomingdata[i].Full_Name);
+    let Phone = encrypt('98877654444');
+    // let ph = tsPhone.toString();
+    // let Phone = encrypt(ph);
+    let Home_State =  incomingdata[i].Home_State && encrypt(incomingdata[i].Home_State);
+    let Work_State = incomingdata[i].Work_State && encrypt(incomingdata[i].Work_State);
+    let Ocupation =  incomingdata[i].Occupation && encrypt(incomingdata[i].Occupation);
+    let Alt_Phone  = encrypt('9374837433');
+    // let alph = tsAlt_Phone.toString();
+    // let Alt_Phone =  encrypt(alph);
+    let Gender = incomingdata[i].Gender && encrypt(incomingdata[i].Gender);
+    let Age  = encrypt('56');
+    // let ag = tsAge.toString();
+    // let Age =  encrypt(ag);
+    let statusNumber = encrypt('1');
+    // let Status =  encrypt(incomingdata[i].Status);
+    
+    // let Full_Name = incomingdata[i].Full_Name;
+    // let Phone = incomingdata[i].Phone;
+    // let Home_State =  incomingdata[i].Home_State;
+    // let Work_State =  incomingdata[i].Work_State;
+    // let Ocupation =  incomingdata[i].Occupation;
+    // let Alt_Phone =  incomingdata[i].Alt_Phone;
+    // let Gender =  incomingdata[i].Gender;
+    // let Age =  incomingdata[i].Age;
+    // let statusNumber = '1';
+    let insertQuery = "INSERT INTO organization_A (Full_Name,Phone,Home_State,Work_State,Occupation,Alt_Phone,Gender,Age,Status) VALUES ('" + Full_Name + "','" + Phone + "','" + Home_State + "','" + Work_State + "','" + Ocupation + "','" + Alt_Phone + "','" + Gender + "','" + Age + "','" + statusNumber + "')";
+     insresponse = await runQuery(insertQuery);
+  console.log('rows inserted in database');
+  }
+  if(insresponse){
+    res.send("200");
+  }else{
+    res.send("404");
+  }
+});
 
 module.exports = router;
