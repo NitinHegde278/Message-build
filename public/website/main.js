@@ -3054,7 +3054,7 @@ var UrlConstants = /** @class */ (function () {
     function UrlConstants() {
     }
     UrlConstants.modal_name = "NovoNordiskIN";
-    UrlConstants.MAINURL = 'http://localhost:3399/';
+    UrlConstants.MAINURL = '/';
     // static usersGetTableItems = 'ex/register/submit';
     UrlConstants.saveUser = 'portal/users/addupdateuser';
     UrlConstants.updateUser = 'portal/users/updateportal';
