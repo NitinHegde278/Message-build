@@ -112,7 +112,7 @@ var decrypt = ((encrypted) => {
 // });
 
 
-function decrypt(text){
+function decryptEmail(text){
   var decipher = crypto.createDecipher('aes-128-cbc',key)
   var dec = decipher.update(text,'hex','utf8')
   dec += decipher.final('utf8');
@@ -123,7 +123,7 @@ let sendemail = async (emailContent) => {
   let ginfo = `select gmail_id,password from gmail_info`;
   let infores = await runQuery(ginfo)
   let gmail = infores[0].gmail_id;
-  let password = decrypt(infores[0].password);
+  let password = decryptEmail(infores[0].password);
   // let password = infores[0].password;
   return new Promise((resolve, reject) => {
     var transporter = nodemailer.createTransport({
