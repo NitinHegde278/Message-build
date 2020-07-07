@@ -16,7 +16,7 @@
     "debug": "~2.6.9",
     "errorhandler": "^1.5.1",
     "express": "~4.16.1",
-    "express-jwt": "^5.3.1",
+    "express-jwt": "^6.0.0",
     "express-session": "^1.17.0",
     "flash": "^1.1.0",
     "hbs": "^4.1.0",
